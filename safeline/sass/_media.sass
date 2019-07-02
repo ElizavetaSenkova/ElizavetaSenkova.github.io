@@ -42,68 +42,6 @@
 					&::before
 						height: 1040px
 
-@media (max-width: 1450px) 
-	.inner
-		.page-content
-			.parameters
-				.custom-dots
-					width: 486px
-
-					top: 104px
-					left: 0
-					bottom: 0
-					right: 0
-					margin: auto
-					.slick-dots
-						display: flex
-						li
-							width: 137px
-							margin-bottom: 0
-							margin-right: 20px
-							&:hover
-								right: unset
-						li:nth-child(1)
-							display: none
-						li:nth-child(2)::before
-							top: 25px
-							left: 26px
-						li:nth-child(3)::before
-							top: 32px
-							left: 28px
-						li:nth-child(4)::before
-							top: 35px
-							left: 26px
-						li:nth-child(5)::before
-							left: 30px
-						button
-							width: unset
-							margin: 0
-
-							font-size: 0
-				&__inner
-					max-width: 800px
-				&__title
-					width: unset
-					margin-bottom: 132px
-
-					text-align: center
-					&::before
-						right: 128px
-				&__slide
-					.anim-wrap
-						display: none
-				&__info
-					display: none
-				&__info-block
-					display: block
-					max-width: 800px
-					margin: 0 auto
-				&__moile-title
-					display: block
-				&__gost
-					display: none
-				
-
 
 @media (max-width: 1346px) 
 	.inner
@@ -228,11 +166,68 @@
 
 				background-color: inherit
 				border: none
+		.page-content
+			.parameters
+				.custom-dots
+					width: 486px
 
+					top: 104px
+					left: 0
+					bottom: 0
+					right: 0
+					margin: auto
+					.slick-dots
+						display: flex
+						li
+							width: 137px
+							margin-bottom: 0
+							margin-right: 20px
+							&:hover
+								right: unset
+						li:nth-child(1)
+							display: none
+						li:nth-child(2)::before
+							top: 20px
+							left: 26px
+						li:nth-child(3)::before
+							top: 25px
+							left: 28px
+						li:nth-child(4)::before
+							top: 26px
+							left: 26px
+						li:nth-child(5)::before
+							top: 16px
+							left: 30px
+						button
+							width: unset
+							margin: 0
 
-	.preview
-		&__tape-big
-			display: none !important
+							font-size: 0
+				&__inner
+					max-width: 800px
+				&__title
+					width: unset
+					margin-bottom: 132px
+
+					text-align: center
+					&::before
+						right: 128px
+				&__slide
+					.anim-wrap
+						display: none
+				&__info
+					display: none
+				&__info-block
+					display: block
+					max-width: 800px
+					margin: 0 auto
+				&__moile-title
+					display: block
+				&__gost
+					display: none
+			.preview
+				&__tape-big
+					display: none !important
 // ≥992px
 +media-breakpoint-down(md)
 	.inner
