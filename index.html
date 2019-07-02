@@ -1,1 +1,1000 @@
-Hello World
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>SafeLine</title>
+	<meta name="description" content="SafeLine">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+	
+	<meta name="theme-color" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+
+	<div class="overlay"></div>
+
+	<div class="inner">
+
+		<!-- HEADER -->
+		<header class="page-header">
+			<div class="page-header__inner">
+
+				<div class="row">
+
+					<div class="page-header__wrapper">
+
+						<div class="col-lg-2">
+							<a href="" class="page-header__logo">
+								<img src="img/header/header-logo.png" alt="Логотип магазина SafeLine">
+							</a>
+						</div>
+
+						<div class="col-lg-5 page-header__menu-wrapper">
+							<button class="page-header__open-menu" type="button">
+								<img src="img/header/open-menu.svg" alt="" width="25px" height="25px">
+								<span>МЕНЮ</span>
+							</button>
+						</div>
+
+						<div class="col-lg-5 page-header__nav-wrapper">
+							<button class="page-header__close-menu" type="button"><img src="img/header/close-menu.png" alt="" width="24px" height="24px"></button>
+							<ul class="page-header__nav">
+								<li class="page-header__item"><a href="#" class="page-header__link">О продукции</a></li>
+								<li class="page-header__item"><a href="#" class="page-header__link">Ассортимент</a></li>
+								<li class="page-header__item"><a href="#" class="page-header__link">Отзывы</a></li>
+								<li class="page-header__item"><a href="#" class="page-header__link">Где купить</a></li>
+								<li class="page-header__item"><a href="contacts.html" class="page-header__link">Контакты</a></li>
+							</ul>
+						</div>
+
+						<div class="col-lg-5 page-header__enter-tape">
+							<a href="entry.html" class="page-header__enter">Вход для партнеров</a>
+							<ul class="page-header__tape-list">
+									<li><img class="page-header__tape-prof" src="img/header/tape.png" alt="Изолента профессионала"></li>
+									<li><img class="page-header__pro" src="img/header/pro.png" alt="PRO"></li>
+							</ul>
+						</div>
+					
+				</div>
+
+				</div>
+
+			</div>
+		</header>
+		<!-- HEADER -->
+
+		<!-- MAIN -->
+		<main class="page-content">
+
+			<div class="preview">
+				<div class="row">
+
+					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 preview__tapes-ad">
+						<img class="preview__tape-prof" src="img/header/tape.png" alt="Изолента профессионала">
+					</div>
+
+					<div class="col-xl-4 preview__tape-big">
+						<img src="img/preview/preview-tape.png" alt="">
+					</div>
+
+					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 preview__tapes-ad">
+						<a class="preview__main popup-with-form" href="#slide_preview">
+
+							<p>ГЛАВНОЕ<br> О SAFELINE<br> ЗА 1 МИНУТУ</p>
+
+							<div class="preview__main-btn"></div>
+
+						</a>
+					</div>
+
+					<div class="popup-preview mfp-hide white-popup-block" id="slide_preview">
+						<div class="popup-preview__inner">
+
+							<div class="t-width t-width_10" data-video-width="960" data-video-height="540">
+
+								<video width="960" height="540" autoplay="" controls="controls" muted="muted">
+									<source src="video/video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+									<source src="video/video-webm.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+								</video>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="preview-bottom">
+				<div class="container">
+					<div class="row">
+
+						<div class="col-lg-12">
+							<ul class="preview-bottom__list">
+								<li><img src="img/preview-bottom/600v.png" alt=""></li>
+								<li><img src="img/preview-bottom/80C.png" alt=""></li>
+								<li><img src="img/preview-bottom/200.png" alt=""></li>
+								<li><img src="img/preview-bottom/not-fire.png" alt=""></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<section class="parameters">
+
+				<div class="custom-dots"></div>
+
+				<div class="parameters__inner">
+
+				<div class="row">
+					<div class="col-lg-12">
+						<h1 class="parameters__title">
+								ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
+						</h1>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-12">
+						<!-- <div class="custom-dots"></div> -->
+						<div id="parameters__slider">
+							
+							<!-- 1 slide -->
+							<div class="slide parameters__slide row" data-title="Высокая адгезия">
+
+								<div class="col-lg-12">
+										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
+											<canvas id="canvas1" style="background-color:#FFFFFF;"></canvas>
+											<div class="anim-title"></div>
+										</div>
+								</div>
+
+								<div class="parameters__gost">
+									<a href="#" class="parameters__gost-link">
+										<ul class="parameters__gost-list">
+											<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+											<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+											<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+										</ul>
+									</a>
+								</div>
+
+								<div class="col-lg-12 parameters__info">
+									<h2 class="parameters__slide-title">Высокая адгезия (липкость)</h2>
+									<a class="parameters__slide-btn popup-with-form" href="#slide_form-height">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+								</div>
+
+								<div class="col-lg-12 parameters__info-block">
+									<h1>ВЫСОКАЯ АДГЕЗИЯ</h1>
+									<p>
+										Качество работы с изолентой зависит от качества ее липкого слоя – адгезии (от лат. 
+										adhaesio — прилипание) — «сила сцепления». Адгезионные свойства изоленты определяются 
+										двумя основными параметрами: толщиной и типом клеевого слоя. Толщина клеевого слоя SAFELINE
+										составляет 15 микрон. Клеевой слой определяет липкость изоленты. В данном случае важен тип
+										клеевого состава: акриловый или каучуковый. Разница между клеевыми составами в том, что для
+										лент с акриловым слоем сила адгезионной связи возрастает со временем. А для лент с 
+										каучуковым слоем, как у SAFELINE, полная адгезия достигается практически мгновенно.
+									</p>
+								</div>
+
+								<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-height">
+									<div class="slide-popup__inner">
+
+										<h1>ВЫСОКАЯ АДГЕЗИЯ</h1>
+										<p>
+											Качество работы с изолентой зависит от качества ее липкого слоя – адгезии (от лат. 
+											adhaesio — прилипание) — «сила сцепления». Адгезионные свойства изоленты определяются 
+											двумя основными параметрами: толщиной и типом клеевого слоя. Толщина клеевого слоя SAFELINE
+											составляет 15 микрон. Клеевой слой определяет липкость изоленты. В данном случае важен тип
+											клеевого состава: акриловый или каучуковый. Разница между клеевыми составами в том, что для
+											лент с акриловым слоем сила адгезионной связи возрастает со временем. А для лент с 
+											каучуковым слоем, как у SAFELINE, полная адгезия достигается практически мгновенно.
+										</p>
+
+									</div>
+								</div>
+								<!-- slide-popup -->
+
+							</div>
+							
+							<!-- 2 slide -->
+							<div class="slide parameters__slide row" data-title="Напряжение пробоя">
+									<div class="col-lg-12">
+										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
+											<canvas id="canvas2" style="background-color:#FFFFFF;"></canvas>
+											<div class="anim-title"></div>
+										</div>
+									</div>
+
+									<div class="parameters__gost">
+									<a href="#" class="parameters__gost-link">
+										<ul class="parameters__gost-list">
+											<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+											<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+											<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+										</ul>
+									</a>
+								</div>
+
+									<div class="col-lg-12 parameters__info">
+										<h2 class="parameters__slide-title">Напряжение пробоя 6000В</h2>
+										<a class="parameters__slide-btn popup-with-form" href="#slide_form-voltage">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+									</div>
+
+									<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-voltage">
+										<div class="slide-popup__inner">
+	
+											<h1>НАПРЯЖЕНИЕ НА ПРОБОЙ</h1>
+											<p>
+												Единица измерения — Вольт. Определяет максимальное напряжение, которое выдерживает один слой изоленты. 
+											</p>
+
+											<p>
+												Напряжение на пробой изоленты SAFELINE, при ее толщине в 0,15 мм, составляет 6000 Вольт. Этот параметр
+												напрямую зависит от напряжения пробоя материала, из которого изготовлена изолента (ПВХ-основы). Единица 
+												измерения - Вольт/мм. Изолента разной толщины, выполненная из одного и того же материала, будет иметь 
+												разное напряжение на пробой – чем изолента толще, тем больше напряжение, которое она выдерживает. 
+											</p>
+
+											<p>
+												У большинства изолент, представленных на рынке, толщина колеблется в пределах 0,13 мм, соответственно
+												напряжение на пробой у них будет меньше.
+											</p>
+
+											<p>
+												SAFELINE является надежным изоляционным материалом при электротехнических работах.
+											</p>
+	
+										</div>
+									</div>
+									<!-- slide-popup -->
+
+									<!-- mobile -->
+
+								<div class="col-lg-12 parameters__moile-title">
+									<h2>НАПРЯЖЕНИЕ НА ПРОБОЙ</h2>
+									<p>
+										Единица измерения — Вольт. Определяет максимальное напряжение, 
+										которое выдерживает  один слой изоленты. 
+									</p>
+									<p>
+										Напряжение на пробой изоленты SAFELINE, при ее толщине в 0,15 мм,  составляет 6000 Вольт.
+										 Этот параметр напрямую зависит от напряжения пробоя материала, из которого изготовлена
+											 изолента (ПВХ-основы). Единица измерения - Вольт/мм. Изолента разной толщины,  
+											 выполненная из одного и того же материала, будет иметь разное напряжение на пробой –  
+											 чем изолента толще, тем больше напряжение, которое она выдерживает. 
+									</p>
+									<p>
+										У большинства изолент, представленных на рынке, толщина колеблется в пределах 0,13 мм,
+										  соответственно напряжение на пробой у них будет меньше.
+									</p>
+
+								</div>
+
+								<!-- mobile -->
+
+								</div>
+
+							<!-- 3 slide -->
+							<div class="slide parameters__slide row" data-title="Диапазон рабочих температур">
+									<div class="col-lg-12">
+										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
+											<canvas id="canvas3" style="background-color:#FFFFFF;"></canvas>
+											<div class="anim-title"></div>
+										</div>
+									</div>
+
+									<div class="parameters__gost">
+											<a href="#" class="parameters__gost-link">
+												<ul class="parameters__gost-list">
+													<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+												</ul>
+											</a>
+										</div>
+
+									<div class="col-lg-12 parameters__info">
+										<h2 class="parameters__slide-title">Сохраняет свойства от –50°C до +80°C</h2>
+										<a class="parameters__slide-btn popup-with-form" href="#slide_form-temperature">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+									</div>
+
+										<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-temperature">
+										<div class="slide-popup__inner">
+	
+											<h1>РАБОТА В РАЗНЫХ ТЕМПЕРАТУРАХ</h1>
+											<p>
+												По требованиям ГОСТ, изолента должна сохранять свои характеристики в различных температурных условиях:
+												от -50 °С до +70 °С. Все серии изолент SAFELINE обладают высокой термоустойчивостью, и сохраняют свои 
+												свойства в температурном диапазоне выше нормы: от -50 °C до +80 °C. 
+											</p>
+
+											<p>
+												SAFELINE можно использовать, не опасаясь ни суровых сибирских морозов, ни палящего зноя южных регионов,
+												при этом изолента полностью и без ущерба выполняет свои функции: достаточную электрическую изоляцию, 
+												надежное фиксирование жгутов проводов и маркировку. Большое количество изолент, представленных на рынке,
+												имеют температурный диапазон меньше требований ГОСТ. Будьте внимательны при выборе изоленты.
+											</p>
+	
+										</div>
+									</div>
+									<!-- slide-popup -->
+
+									<!-- mobile -->
+
+								<div class="col-lg-12 parameters__moile-title">
+									<h2>РАБОТА В РАЗНЫХ ТЕМПЕРАТУРАХ</h2>
+									<p>
+											По требованиям ГОСТ, изолента должна сохранять свои характеристики в различных  температурных 
+											условиях: от -50 °С до +70 °С.  Все серии изолент SAFELINE обладают высокой термоустойчивостью,
+											 и сохраняют свои  свойства в температурном диапазоне выше нормы: от -50 °C до +80 °C.SAFELINE 
+											 можно использовать, не опасаясь ни суровых сибирских морозов, ни палящего  зноя южных регионов,
+												при этом изолента полностью и без ущерба выполняет свои функции:  достаточную электрическую 
+												изоляцию, надежное фиксирование жгутов проводов и  маркировку.  Большое количество изолент, 
+												представленных на рынке, имеют температурный диапазон  меньше требований ГОСТ. Будьте 
+												внимательны при выборе изоленты.  
+									</p>
+								</div>
+
+								<!-- mobile -->
+
+								</div>
+
+							<!-- 4 slide -->
+							<div class="slide parameters__slide row" data-title="Относительное удлинение при разрыве">
+									<div class="col-lg-12">
+										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
+											<canvas id="canvas5" style="background-color:#FFFFFF;"></canvas>
+											<div class="anim-title"></div>
+										</div>
+									</div>
+
+									<div class="parameters__gost">
+											<a href="#" class="parameters__gost-link">
+												<ul class="parameters__gost-list">
+													<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+												</ul>
+											</a>
+										</div>
+
+									<div class="col-lg-12 parameters__info">
+										<h2 class="parameters__slide-title">Растягивается на 200%</h2>
+										<a class="parameters__slide-btn popup-with-form" href="#slide_form-elongation">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+									</div>
+
+										<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-elongation">
+										<div class="slide-popup__inner">
+	
+											<h1>ПРОЧНОСТЬ ПРИ РАСТЯЖЕНИИ</h1>
+											<p>
+												Единица измерения — Мпа, и относительное удлинение при разрыве (единица измерения — %) — характеризуют 
+												эластичность ленты. Чем выше эластичные свойства ленты, тем качественнее выполняется процесс жгутирования 
+												и удобнее работать с изолентой. Обычно ленту наматывают с 50%-ным перекрытием, при этом натяжение должно быть
+												достаточным для обеспечения равномерной намотки, а разрыв при окончании работ должен происходить без излишних 
+												затруднений и не оставлять сильно рваных краев. За это и отвечают 2 технических параметра изоленты: прочность
+												при растяжении и относительное удлинение при разрыве, а ещё точнее – правильно подобранное соотношение их 
+												величин. Прочность при растяжении изоляционной ленты SAFELINE достигает 15 МПа, а ее относительное удлинение 
+												не менее 200%. В этом Вы можете убедиться самостоятельно.
+											</p>
+	
+										</div>
+									</div>
+									<!-- slide-popup -->
+
+									<!-- mobile -->
+
+								<div class="col-lg-12 parameters__moile-title">
+									<h2>ПРОЧНОСТЬ ПРИ РАСТЯЖЕНИИ</h2>
+									<p>
+											Единица измерения — Мпа, и относительное удлинение при разрыве (единица измерения — %) — 
+											характеризуют эластичность ленты. Чем выше эластичные свойства ленты, тем качественнее 
+											выполняется процесс жгутирования и удобнее работать с изолентой. Обычно ленту наматывают 
+											с 50%-ным перекрытием, при этом натяжение должно быть достаточным для обеспечения равномерной 
+											намотки, а разрыв при окончании работ должен происходить без излишних затруднений и не 
+											оставлять сильно рваных краев. За это и отвечают 2 технических параметра изоленты: 
+											прочность при растяжении и относительное удлинение при разрыве, а ещё точнее – правильно 
+											подобранное соотношение их величин. Прочность при растяжении изоляционной ленты 
+											SAFELINE достигает 15 МПа, а ее относительное удлинение не менее 200%. В этом Вы 
+											можете убедиться самостоятельно. 
+									</p>
+								</div>
+
+								<!-- mobile -->
+
+								</div>
+
+							<!-- 5 slide -->
+							<div class="slide parameters__slide row" data-title="Пожаробезопасность">
+									<div class="col-lg-12">
+										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
+											<canvas id="canvas4" style="background-color:#FFFFFF;"></canvas>
+											<div class="anim-title"></div>
+										</div>
+									</div>
+
+									<div class="parameters__gost">
+											<a href="#" class="parameters__gost-link">
+												<ul class="parameters__gost-list">
+													<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+												</ul>
+											</a>
+										</div>
+
+									<div class="col-lg-12 parameters__info">
+										<h2 class="parameters__slide-title">Не поддерживает горение</h2>
+										<a class="parameters__slide-btn popup-with-form" href="#slide_form-fire">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+									</div>
+
+									<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-fire">
+										<div class="slide-popup__inner">
+	
+											<h1>НЕ ГОРЮЧЕСТЬ</h1>
+											<p>
+												Простейший тест на качество изоленты – горючесть. Качественная изолента должна затухать сразу после
+												вынесения ее из открытого пламени. В Российской Федерации действует Межгосударственный стандарт ГОСТ
+												16214-86, регламентирующий технические требования и требования безопасности электроизоляционных лент
+												ПВХ. Согласно этим требованиям, изоляционная лента не должна поддерживать горение, если мы видим 
+												обратное, то перед нами, не что иное, как ее суррогат. В отличие от таких вот «изоляционных лент», 
+												которыми сегодня наводнен рынок, SAFELINE не только не поддерживает горение, но и по большинству своих
+												параметров превосходит требования ГОСТ к изолентам Высшего сорта.
+											</p>
+	
+										</div>
+									</div>
+									<!-- slide-popup -->
+
+									<!-- mobile -->
+
+								<div class="col-lg-12 parameters__moile-title">
+									<h2>НЕ ГОРЮЧЕСТЬ</h2>
+									<p>
+										Простейший тест на качество изоленты – горючесть. Качественная изолента должна затухать 
+										 сразу после вынесения ее из открытого пламени. В Российской Федерации действует 
+										 Межгосударственный стандарт ГОСТ 16214-86, регламентирующий технические требования и 
+										 требования безопасности электроизоляционных лент ПВХ. Согласно этим требованиям, 
+										 изоляционная лента не должна поддерживать горение, если мы видим обратное, то перед 
+										 нами, не что иное, как ее суррогат.  В отличие от таких вот «изоляционных лент», 
+										 которыми сегодня наводнен рынок, SAFELINE не только не поддерживает горение, но 
+										 и по большинству своих параметров превосходит требования ГОСТ к изолентам Высшего сорта. 
+									</p>
+								</div>
+
+								<!-- mobile -->
+
+								</div>
+
+
+							</div>
+
+								</div>
+							</div>
+
+				</div>
+			</section>
+
+			<section class="assortment">
+
+				<div class="custom-dots2"></div>
+
+				<div class="assortment__inner">
+
+			<div class="row">
+				<div class="col-12">
+					<!-- <div class="custom-dots2"></div> -->
+					<div id="assortment__slider">
+						
+						<!-- 1 slide -->
+						<div class="slide assortment__slide row assortment__slider-pro" data-title="PRO" id="first_item">
+
+							<div class="col-lg-12">
+								<h1 class="assortment__title">
+										АССОРТИМЕНТ
+								</h1>
+							</div>
+
+							<div class="col-lg-12">
+								<p class="assortment__slide-text">
+									Изоляционная лента серии PRO предназначена для проведения электромонтажных работ и
+									 рекомендуется для профессионального и бытового применения. Толщина ленты 0,15 мм. Каждый
+									  размер выпускается в 8-ми цветах. 
+								</p>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="assortment__size-color">
+
+								<div class="assortment__size-wrapper">
+									<h3 class="assortment__size">4 размера</h3>
+									<ul class="assortment__size-list">
+										<li class="assortment__size-item">
+											<img class="assortment__size-img" src="img/assortment/pro/size.png" alt="">
+											<p class="assortment__size-text">15мм × 10м</p>
+										</li>
+										<li class="assortment__size-item">
+											<img class="assortment__size-img" src="img/assortment/pro/size.png" alt="">
+											<p class="assortment__size-text">15мм × 20м</p>
+										</li>
+										<li class="assortment__size-item">
+											<img class="assortment__size-img" src="img/assortment/pro/size.png" alt="">
+											<p class="assortment__size-text">19мм × 20м</p>
+										</li>
+										<li class="assortment__size-item">
+											<img class="assortment__size-img" src="img/assortment/pro/size.png" alt="">
+											<p class="assortment__size-text">19мм × 25м</p>
+										</li>
+									</ul>
+								</div>
+						
+								<div class="assortment__color-wrapper">
+									<h3 class="assortment__color">8 цветов</h3>
+									<ul class="assortment__color-list">
+										<!-- 1 -->
+										<li class="assortment__color-item">
+											<img src="img/assortment/pro/color-1.png" alt="">
+										</li>
+										<!-- 2 -->
+										<li class="assortment__color-item">
+											<img src="img/assortment/pro/color-2.png" alt="">
+										</li>
+										<!-- 3 -->
+										<li class="assortment__color-item">
+											<img src="img/assortment/pro/color-3.png" alt="">
+										</li>
+										<!-- 4 -->
+										<li class="assortment__color-item">
+											<img src="img/assortment/pro/color-4.png" alt="">
+										</li>
+										<!-- 5 -->
+										<li class="assortment__color-item">
+											<img src="img/assortment/pro/color-5.png" alt="">
+										</li>
+										<!-- 6 -->
+										<li class="assortment__color-item">
+											<img src="img/assortment/pro/color-6.png" alt="">
+										</li>
+										<!-- 7 -->
+										<li class="assortment__color-item">
+											<img src="img/assortment/pro/color-7.png" alt="">
+										</li>
+										<!-- 8 -->
+										<li class="assortment__color-item">
+											<img src="img/assortment/pro/color-8.png" alt="">
+										</li>
+									</ul>
+								</div>
+					
+								</div>
+							</div>
+
+							<div class="col-lg-12 assortment__addition-inner">
+
+								<h3 class="assortment__addition">2 цвета</h3>
+
+								<div class="assortment__addition-wrapper">
+
+									<p class="assortment__addition-name">Изолента в шоу-боксах</p>
+
+									<ul class="assortment__addition-good">
+
+									<li>
+										<img src="img/assortment/pro/color-ad-1.png" alt="">
+										<p>Шоу-бокс с синей изолентой 15х20 (36 шт.) </p>
+									</li>
+
+									<li>
+										<img src="img/assortment/pro/color-ad-2.png" alt="">
+										<p>Шоу-бокс с чёрной изолентой 19х20 (28 шт.)</p>
+									</li>
+
+								</ul>
+
+								</div>
+
+							</div>
+
+						</div>
+						
+						<!-- 2 slide -->
+						<div class="slide assortment__slide row assortment__slider-auto" data-title="AUTO" id="second_item">
+
+							<div class="col-lg-12">
+								<h1 class="assortment__title">
+										АССОРТИМЕНТ
+								</h1>
+							</div>
+
+							<div class="col-lg-12">
+								<p class="assortment__slide-text">
+										Мини-ролик изоляционной ленты серии AUTO значительно меньше изоленты стандартного размера,
+										 диаметр ролика составляет 42 мм, толщина ленты 0,15 мм, а длина намотки ленты – 5 метров.
+											Такой размер является важным преимуществом при проведении электромонтажных работ в автомобиле.
+											 Рекомендуется для использования в ограниченном и труднодоступном пространстве. Данный размер 
+											 выпускается в 2-х цветах.
+								</p>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="assortment__size-color">
+
+								<div class="assortment__size-wrapper">
+									<h3 class="assortment__size">1 размер</h3>
+									<ul class="assortment__size-list">
+										<li class="assortment__size-item">
+											<img class="assortment__size-img" src="img/assortment/pro/size.png" alt="">
+											<p class="assortment__size-text">15мм × 5м</p>
+										</li>
+									</ul>
+								</div>
+
+								<div class="assortment__color-wrapper assortment__img-auto">
+									<h3 class="assortment__color">2 цвета</h3>
+									<ul class="assortment__color-list">
+										<!-- 1 -->
+										<li class="assortment__color-item">
+											<img class="assortment__img-auto" src="img/assortment/auto/color-1.png" alt="">
+										</li>
+										<!-- 2 -->
+										<li class="assortment__color-item">
+											<img class="assortment__img-auto" src="img/assortment/auto/color-2.png" alt="">
+										</li>
+									</ul>
+								</div>
+
+								</div>
+							</div>
+
+						</div>
+
+						<!-- 3 slide -->
+						<div class="slide assortment__slide row assortment__slider-master" data-title="Master" id="third_item">
+
+							<div class="col-lg-12">
+								<h1 class="assortment__title">
+										АССОРТИМЕНТ
+								</h1>
+							</div>
+
+							<div class="col-lg-12">
+								<p class="assortment__slide-text">
+										Мини-ролики изоляционной ленты в комплекте из 7-ми цветов серии Master - практичный набор
+										 на все случаи жизни: от профессионального применения до хозяйственных нужд. Рекомендуется для
+											использования в ограниченном и труднодоступном пространстве. Диаметр ролика 42 мм, толщина 
+											ленты 0,15 мм, длина намотки ленты – 5 метров. Хороший вариант для домашнего использования – 
+											запас всех основных цветов в небольшом количестве.
+								</p>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="assortment__size-color">
+
+									<div class="assortment__size-wrapper">
+										<h3 class="assortment__size">1 размер</h3>
+										<ul class="assortment__size-list">
+											<li class="assortment__size-item">
+												<img class="assortment__size-img" src="img/assortment/pro/size.png" alt="">
+												<p class="assortment__size-text">15мм × 5м</p>
+											</li>
+										</ul>
+									</div>
+
+									<div class="assortment__color-wrapper assortment__img-master">
+										<h3 class="assortment__color">Комплект из 7 цветов</h3>
+										<ul class="assortment__color-list">
+											<!-- 1 -->
+											<li class="assortment__color-item assortment__color-kit">
+												<img src="img/assortment/master/img.png" alt="">
+											</li>
+										</ul>
+									</div>
+
+								</div>
+							</div>
+						
+
+						</div>
+
+						<!-- 4 slide -->
+						<div class="slide assortment__slide row assortment__slider-indicator" data-title="Индикаторная отвертка" id="fourth_item">
+
+							<div class="col-lg-12">
+								<h1 class="assortment__screwdriver-title">
+										ИНДИКАТОРНАЯ ОТВЕРТКА SAFELINE
+								</h1>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="assortment__screwdriver">
+
+									<div class="assortment__circle">5в1</div>
+
+									<img src="img/assortment/addition/screwdriver.png" alt="" class="assortment__screwdriver-open">
+
+									<img src="img/assortment/addition/screwdriver-2.png" alt="" class="assortment__screwdriver-close">
+
+								</div>
+							</div>
+
+							<div class="col-lg-12">
+								<p class="assortment__screwdriver-text">
+										Многофункциональная индикаторная отвертка Safeline — это устройство «5 в 1».
+										В отличии от обычных «пробников», определяющих только «фаза-ноль», отвертка Safeline позволяет: 
+								</p>
+							</div>
+
+							<div class="col-lg-12">
+								<div class="assortment__screwdriver-wrapper">
+
+									<!-- 1 -->
+									<div class="assortment__screwdriver-item">
+										<img src="img/assortment/addition/1.png" alt="">
+										<p>Определять «фаза-ноль»</p>
+									</div>
+
+									<!-- 2 -->
+									<div class="assortment__screwdriver-item">
+										<img src="img/assortment/addition/2.png" alt="">
+										<p>Находить скрытую проводку (определение переменного напряжения бесконтактным способом)</p>
+									</div>
+
+									<!-- 3 -->
+									<div class="assortment__screwdriver-item">
+										<img src="img/assortment/addition/3.png" alt="">
+										<p>Определять место обрыва кабеля</p>
+									</div>
+
+									<!-- 4 -->
+									<div class="assortment__screwdriver-item">
+										<img src="img/assortment/addition/4.png" alt="">
+										<p>Проверять целостность цепи</p>
+									</div>
+
+									<!-- 5 -->
+									<div class="assortment__screwdriver-item">
+										<img src="img/assortment/addition/5.png" alt="">
+										<p>Определять полярность элементов питания</p>
+									</div>
+
+								</div>
+							</div>
+
+						</div>
+
+
+						</div>
+
+							</div>
+						</div>
+				</div>
+			</section>
+
+			<section class="comments">
+					<div class="row">
+
+						<div class="col-lg-12">
+							<h1 class="comments__title">ОТЗЫВЫ ПОЛЬЗОВАТЕЛЕЙ</h1>
+						</div>
+
+						<div class="col-lg-12">
+							<ul class="comments__list">
+
+								<li class="comments__item"><a href="https://otzovik.com/review_5377587.html">
+									<img src="img/comments/comments-1.png" alt="">
+								</a></li>
+
+								<li class="comments__item"><a href="https://otzovik.com/review_6458357.html">
+									<img src="img/comments/comments-2.png" alt="">
+								</a></li>
+
+								<li class="comments__item"><a href="https://otzovik.com/review_5996994.html">
+									<img src="img/comments/comments-3.png" alt="">
+								</a></li>
+
+								<li class="comments__item"><a href="https://otzovik.com/review_6258900.html">
+									<img src="img/comments/comments-4.png" alt="">
+								</a></li>
+
+							</ul>
+						</div>
+
+						<div class="col-lg-2 offset-lg-5">
+							<a class="comments__read" href="https://otzovik.com/reviews/izolyacionnaya_lenta_pvh_safeline_multech_911/">
+								Читать все отзывы
+							</a>
+						</div>
+
+						<div class="col-lg-2 offset-lg-2">
+							<a class="comments__leave-review popup-with-form" href="#my_form">
+									ОСТАВИТЬ ОТЗЫВ
+							</a>
+						</div>
+
+					</div>
+			</section>
+
+			<section class="shops">
+				<div class="shops__inner">
+				<div class="row">
+
+					<div class="col-lg-12">
+						<h1 class="shops__title">ГДЕ КУПИТЬ ИЗОЛЕНТУ SAFELINE</h1>
+					</div>
+
+					<div class="col-lg-12">
+						<h1 class="shops__subtitle">Розничные торговые сети</h1>
+					</div>
+
+					<div class="col-lg-12">
+						<ul class="shops__list">
+							<li class="shops__item"><img src="img/shops/usual-1.png" alt="" width="168px" height="43px"></li>
+							<li class="shops__item"><img src="img/shops/usual-2.png" alt="" width="238px" height="43px"></li>
+							<li class="shops__item"><img src="img/shops/usual-3.png" alt="" width="218px" height="43px"></li>
+							<li class="shops__item"><img src="img/shops/usual-4.png" alt="" width="155px" height="43px"></li>
+							<li class="shops__item"><img src="img/shops/usual-5.png" alt="" width="127px" height="43px"></li>
+							<li class="shops__item"><img src="img/shops/usual-6.png" alt="" width="177px" height="43px"></li>
+							<li class="shops__item"><img src="img/shops/usual-7.png" alt="" width="129px" height="43px"></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-12">
+							<h1 class="shops__subtitle">Интернет-магазины</h1>
+					</div>
+
+					<div class="col-lg-12">
+						<ul class="shops__list">
+							<li class="shops__item"><a href="https://sibopt.ru/k9357-izolenta-safeline-1510-krasnyj.html">
+								<img src="img/shops/online-store-1.png" alt="" width="250px" height="43px">
+							</a></li>
+							<li class="shops__item"><a href="https://www.maxidom.ru/catalog/izolenta/1001031493/">
+								<img src="img/shops/online-store-2.png" alt="" width="127px" height="43px">
+							</a></li>
+							<li class="shops__item"><a href="https://shop.feron.ru/catalog/izolenta_pvkh/izolenta_safeline_19mm_20m_sinyaya_9371/">
+								<img src="img/shops/online-store-3.png" alt="" width="194px" height="43px">
+							</a></li>
+							<li class="shops__item"><a href="https://www.etm.ru/catalog/?searchValue=%D0%B8%D0%B7%D0%BE%D0%BB%D0%B5%D0%BD%D1%82%D0%B0%20Safeline">
+								<img src="img/shops/online-store-4.png" alt="" width="150px" height="43px">
+							</a></li>
+							<li class="shops__item"><a href="https://akson.ru/p/izolenta_safeline_19_20_chernyy/">
+								<img src="img/shops/online-store-5.png" alt="" width="120px" height="43px">
+							</a></li>
+						</ul>
+					</div>
+
+				</div>
+				</div>
+			</section>
+
+		</main>
+		<!-- MAIN -->
+
+		<!-- FOOTER -->
+		<footer class="page-footer">
+			<div class="row">
+
+				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-12">
+					<a href="https://www.rosel.ru/" class="page-footer__logo">
+						<img src="img/footer/logo-footer.png" alt="" width="77px" height="102px">
+					</a>
+				</div>
+
+				<div class="col-xl-3 offset-xl-1 col-lg-3 offset-lg-0 col-md-4 offset-md-2 col-sm-4 offset-sm-2 col-12">
+					<p class="page-footer__text">
+							197101, Петроградская наб., дом 36 лит. А,<br> 
+							офис 303, Санкт-Петербург, Россия<br>
+							Телефон +7 (812) 320-83-33
+					</p>
+					<a class="page-footer__feedback-mobile popup-with-form" href="#my_form">ОБРАТНАЯ СВЯЗЬ</a>
+				</div>
+
+				<div class="col-xl-2 offset-xl-2 col-lg-2 offset-lg-2 col-12 page-footer__feedback-desktop">
+					<a class="page-footer__feedback popup-with-form" href="#my_form">ОБРАТНАЯ СВЯЗЬ</a>
+				</div>
+
+			</div>
+		</footer>
+		<!-- FOOTER -->
+	</div>
+
+	<!-- POPUPS -->
+	<section class="popup-feedback mfp-hide white-popup-block" id="my_form">
+		<div class="popup-feedback__inner">
+
+				<button class="popup-feedback__close" id="close">
+					<img src="img/header/close-black.svg" alt="" width="32px" height="32px">
+				</button>
+
+			<h3 class="popup-feedback__title">Обратная связь</h3>
+
+			<p class="popup-feedback__text">
+				Мы будем рады Вашим пожеланиям, замечаниям, отзывам и, конечно, предложениям о сотрудничестве. Пожалуйста, 
+				заполните форму, и мы ответим Вам в максимально короткие сроки
+			</p>
+
+			<!-- FORM -->
+			<form id="form56641699" name="form56641699" role="form" action="" method="POST" data-formactiontype="0" data-inputbox=".t-input-group" class="t-form js-form-proccess t-form_inputs-total_4 " data-success-callback="t702_onSuccess"> <!-- NO ONE SERVICES CONNECTED -->
+				<div class="js-successbox t-form__successbox t-text t-text_md" style="display:none;"></div>
+				<div class="t-form__inputsbox">
+						<div class="t-input-group t-input-group_nm" data-input-lid="1495810359387">
+								<div class="t-input-block"><input type="text" name="Name" class="t-input js-tilda-rule " value="" placeholder="Представьтесь, пожалуйста" data-tilda-rule="name" style="color:#000000; border:1px solid #c9c9c9; ">
+										<div class="t-input-error"></div>
+								</div>
+						</div>
+						<div class="t-input-group t-input-group_em" data-input-lid="1495810354468">
+								<div class="t-input-block"><input type="text" name="Email" class="t-input js-tilda-rule " value="" placeholder="Ваш e-mail" data-tilda-rule="email" style="color:#000000; border:1px solid #c9c9c9; ">
+										<div class="t-input-error"></div>
+								</div>
+						</div>
+						<div class="t-input-group t-input-group_ph" data-input-lid="1495810410810">
+								<div class="t-input-block"><input type="text" name="Phone" class="t-input js-tilda-rule " value="" placeholder="Ваш телефон" data-tilda-rule="phone" style="color:#000000; border:1px solid #c9c9c9; ">
+										<div class="t-input-error"></div>
+								</div>
+						</div>
+						<div class="t-input-group t-input-group_ta" data-input-lid="1528636556028">
+								<div class="t-input-block"><textarea name="Textarea" class="t-input js-tilda-rule " placeholder="Ваше сообщение" style="color:#000000; border:1px solid #c9c9c9; height:102px" rows="3"></textarea>
+										<div class="t-input-error"></div>
+								</div>
+						</div>
+						<div class="t-form__errorbox-middle">
+								<div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
+										<div class="t-form__errorbox-text t-text t-text_md"><p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p>
+												<p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p>
+												<p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
+												<p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
+												<p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
+												<p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p>
+										</div>
+								</div>
+						</div>
+						<div class="t-form__submit">
+								<button type="submit" class="t-submit" style="color:#103775;background-color:#ffc800;font-weight:500;">Отправить
+										сообщение
+								</button>
+						</div>
+				</div>
+				<div class="t-form__errorbox-bottom">
+						<div class="js-errorbox-all t-form__errorbox-wrapper" style="display:none;">
+								<div class="t-form__errorbox-text t-text t-text_md"><p class="t-form__errorbox-item js-rule-error js-rule-error-all"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-req"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-email"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-name"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-phone"></p>
+										<p class="t-form__errorbox-item js-rule-error js-rule-error-string"></p></div>
+						</div>
+				</div>
+		<div style="position: absolute; left: -5000px; bottom:0;"><input type="text" name="form-spec-comments" value="Its good" class="js-form-spec-comments" tabindex="-1"></div>
+			</form>
+			<!-- FORM -->
+
+		</div>
+	</section>
+	<!-- POPUPS -->
+
+	<script src="js/scripts.min.js"></script>
+	<script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+	<script src="http://code.createjs.com/tweenjs-0.5.0.min.js"></script>
+	<script src="http://code.createjs.com/movieclip-0.7.0.min.js"></script>
+	<script src="http://code.createjs.com/preloadjs-0.4.0.min.js"></script>
+</body>
+</html>
