@@ -1,0 +1,64 @@
+.comments
+	max-width: 1320px
+	margin: 0 auto
+	padding-bottom: 80px
+	&__title
+		width: 500px
+		padding-top: 50px
+		padding-bottom: 20px
+
+		position: relative
+
+		font-size: 30px
+		line-height: 1.55
+		font-weight: 700
+		color: $blue
+		&::before
+			content: ""
+
+			position: absolute
+			right: 78px
+			top: 62px
+
+			width: 22px
+			height: 22px
+
+			background-color: $yellow
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		margin: 0
+		padding: 0
+
+		list-style: none
+	&__item
+		padding-bottom: 50px
+		img
+			max-width: 100%
+	&__read
+		padding-top: 30px
+		display: inline-block
+
+		font-size: 16px
+		line-height: 30px
+		font-weight: 700
+		text-align: center
+		color: $yellow
+		border-bottom: 2px solid $yellow
+		&:hover
+			text-decoration: none
+			color: $yellow
+	&__leave-review
+		display: inline-block
+		margin-top: 10px
+		padding: 20px 0
+		width: 230px
+
+		font-size: 14px
+		text-align: center
+		line-height: 20px
+		font-weight: 600
+		color: $blue
+
+		background-color: $yellow

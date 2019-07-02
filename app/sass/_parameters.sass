@@ -1,0 +1,188 @@
+.parameters
+	padding-bottom: 60px
+
+	position: relative
+	.custom-dots
+		position: absolute
+		top: 34px
+		right: -91px
+		z-index: 10
+		.slick-dots
+			margin: 0
+			padding: 0
+			list-style: none
+			li
+				width: 472px
+				padding: 30px 0
+
+				margin-bottom: 20px
+
+				position: relative
+
+				border-top: 5px solid $yellow
+				background-color: $blue
+				&:hover
+					right: calc(100% - 391px + 1px)
+			li:nth-child(2)::before
+				content: ""
+
+				position: absolute
+				top: 30px
+				left: 50px
+
+				width: 50px
+				height: 50px
+
+				background: url(../img/preview-bottom/600v.png)
+				background-size: contain
+				background-repeat: no-repeat
+			li:nth-child(3)::before
+				content: ""
+
+				position: absolute
+				top: 52px
+				left: 50px
+
+				width: 50px
+				height: 50px
+
+				background: url(../img/preview-bottom/80C.png)
+				background-size: contain
+				background-repeat: no-repeat
+			li:nth-child(4)::before
+				content: ""
+
+				position: absolute
+				top: 50px
+				left: 50px
+
+				width: 50px
+				height: 50px
+
+				background: url(../img/preview-bottom/200.png)
+				background-size: contain
+				background-repeat: no-repeat
+			li:nth-child(5)::before
+				content: ""
+
+				position: absolute
+				top: 20px
+				left: 50px
+
+				width: 50px
+				height: 50px
+
+				background: url(../img/preview-bottom/not-fire.png)
+				background-size: contain
+				background-repeat: no-repeat
+			button
+				width: 188px
+				margin-left: 140px
+
+				font-size: 21px
+				line-height: 20px
+				font-weight: 700
+				color: white
+				text-align: left
+				
+				border: none
+				background-color: $blue
+	&__inner
+		max-width: 1320px
+		margin: 0 auto
+	&__title
+		width: 500px
+		margin-top: 50px
+
+		position: relative
+
+		font-size: 30px
+		line-height: 1
+		font-weight: 700
+		color: $blue
+		&::before
+			content: ""
+
+			position: absolute
+			right: -20px
+			top: 3px
+
+			width: 22px
+			height: 22px
+
+			background-color: $yellow
+	&__info
+		display: flex
+		align-items: center
+	&__info-block
+		display: none
+		h1
+			color: $yellow
+			font-size: 30px
+			line-height: 1.55
+			font-weight: 700
+			letter-spacing: .5px
+			text-align: center
+		p
+			width: 100%
+			color: $blue
+			font-size: 18px
+			line-height: 1.55
+			font-weight: 500
+			letter-spacing: 1px
+	&__slide-title
+		margin: 0
+		padding: 12px 37px
+
+		font-size: 30px
+		line-height: 1.55
+		font-weight: 700
+		color: $yellow
+
+		border: 3px solid $yellow
+	&__slide-btn
+		padding: 14px 60px
+
+		font-size: 20px
+		line-height: 1.2
+		font-weight: 700
+		color: white
+
+		background-color: $yellow
+
+	&__gost
+		position: absolute
+		top: 44px
+	&__gost-link
+		display: block
+	&__gost-list
+		display: flex
+		flex-direction: column
+		align-items: center
+
+		margin: 0
+		padding: 0
+		list-style: none
+
+	// mobile
+
+	&__moile-title
+		display: none
+		h2
+			color: $yellow
+			font-size: 30px
+			line-height: 1.55
+			font-weight: bold
+			letter-spacing: 0.5px
+			text-align: center
+		p
+			width: 100%
+
+			color: $blue
+			font-size: 18px
+			line-height: 1.55
+			font-weight: 500
+			letter-spacing: 1px
+
+	// mobile
+

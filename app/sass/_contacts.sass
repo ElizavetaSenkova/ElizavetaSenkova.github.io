@@ -1,0 +1,311 @@
+.contacts
+	display: flex
+	margin: 0 auto
+	max-width: 1240px
+	padding: 60px 20px
+	&__title
+		width: 200px
+		margin: 0
+		margin-bottom: 40px
+
+		position: relative
+
+		font-size: 30px
+		line-height: 1.55
+		font-weight: 700
+		color: $blue
+		&::before
+			content: ""
+
+			position: absolute
+			right: 14px
+			top: 12px
+
+			width: 22px
+			height: 22px
+
+			background-color: $yellow
+	&__text
+		margin: 0
+
+		color: $blue
+		font-size: 18px
+		line-height: 1.55
+		font-weight: 400
+	&__phone
+		display: block
+		margin-top: 10px
+		margin-bottom: 40px
+
+		font-size: 32px
+		font-weight: 600
+		line-height: 1.55
+		color: $blue
+	&__small
+		margin-bottom: 30px
+
+		font-size: 16px
+		color: $blue
+		line-height: 1.55
+		font-weight: 400
+	&__index
+		font-size: 14px
+		line-height: 1.55
+		font-weight: bold
+		color: $blue
+		text-decoration: underline
+	&-form__text
+		width: 100%
+		margin-bottom: 20px
+
+		color: $blue
+		font-size: 18px
+		line-height: 1.55
+		font-weight: 400
+	.tpl-default-uikit
+		padding-left: 140px
+		width: 100%
+		position: relative
+		display: inline-block
+		padding-top: 67px
+		display: flex
+		justify-content: flex-end
+	.tpl-default-uikit .uk-form input:not([type=radio]):not([type=checkbox]),
+	.tpl-default-uikit .uk-form select
+		vertical-align: middle
+	.tpl-default-uikit .uk-form input,
+	.tpl-default-uikit .uk-form select,
+	.tpl-default-uikit .uk-form textarea
+		box-sizing: border-box
+		margin: 0
+		border-radius: 0
+		font: inherit
+		color: inherit
+	.tpl-default-uikit .uk-form input:not([type]),
+	.tpl-default-uikit .uk-form input[type=text],
+	.tpl-default-uikit .uk-form input[type=password],
+	.tpl-default-uikit .uk-form select,
+	.tpl-default-uikit .uk-form textarea
+		height: 34px
+		max-width: 100%
+		padding: 4px 6px
+		background: #FFF
+		color: #444
+		border: 1px solid #cbcbcb
+		border-top-color: #a6a6a6
+		-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset, 0 0 0 1px transparent
+		-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset,0 0 0 1px transparent
+		box-shadow: 0 1px 3px 0 rgba(0,0,0,.1) inset, 0 0 0 1px transparent
+		-webkit-transition: box-shadow ease .3s,border ease .3s
+		-moz-transition: box-shadow ease .3s,border ease .3s
+		transition: box-shadow ease .3s,border ease .3s
+		-webkit-border-radius: 1px
+		-moz-border-radius: 1px
+		border-radius: 1px
+		width: 265px
+		font-family: inherit
+		font-size: inherit
+		vertical-align: middle
+	.tpl-default-uikit .api-mf-antibot
+		border: 0 none!important
+		font-size: 0!important
+		height: 0!important
+		line-height: 0!important
+		padding: 0!important
+		position: absolute!important
+		right: 0!important
+		top: 0!important
+		width: 0!important
+	.tpl-default-uikit .uk-form-row:after,
+	.uk-form-row:before
+		content: ""
+		display: table
+	.tpl-default-uikit .uk-form-row:after
+		clear: both
+	.tpl-default-uikit .uk-form-row:after,
+	.uk-form-row:before
+		content: ""
+		display: table
+	.tpl-default-uikit .uk-form-horizontal .uk-form-label
+		display: none
+	.tpl-default-uikit .uk-form-horizontal .uk-form-controls
+		margin: 0
+		width: 100%
+	.tpl-default-uikit .uk-form-controls 
+		width: 265px
+		position: relative
+	.tpl-default-uikit .uk-form input:not([type=radio]):not([type=checkbox]),
+	.tpl-default-uikit .uk-form select
+		vertical-align: middle
+	.tpl-default-uikit .uk-form input:not([type]),
+	.tpl-default-uikit .uk-form input[type=text],
+	.tpl-default-uikit .uk-form textarea
+		-webkit-appearance: none
+	.tpl-default-uikit .uk-form-controls>:last-child
+		margin-bottom: 0
+	.tpl-default-uikit .uk-form-controls>:first-child
+		margin-top: 0
+	.tpl-default-uikit .uk-form input,
+	.tpl-default-uikit .uk-form select,
+	.tpl-default-uikit .uk-form textarea
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		margin: 0
+		border-radius: 0
+		font: inherit
+		color: inherit
+	.tpl-default-uikit .uk-form-row+.uk-form-row
+		margin-top: 15px
+	.tpl-default-uikit .uk-form-horizontal .uk-form-controls input[type="text"],
+	.tpl-default-uikit .uk-form-horizontal .uk-form-controls textarea 
+		width: 100%
+		color: #000000
+		border: 1px solid #000000
+		box-shadow: none
+		font-family: 'DinPro',sans-serif
+		padding: 6px 20px
+		font-weight: 400
+		min-height: 40px
+	.tpl-default-uikit .uk-form-controls>:last-child
+		margin-bottom: 0
+	.tpl-default-uikit .uk-form-controls>:first-child
+		margin-top: 0
+	.tpl-default-uikit .uk-form select[multiple],
+	.tpl-default-uikit .uk-form select[size],
+	.tpl-default-uikit .uk-form textarea
+		height: auto
+	.tpl-default-uikit .uk-form textarea
+		overflow: auto
+		vertical-align: top
+	.tpl-default-uikit .uk-form input:not([type]),
+	.tpl-default-uikit .uk-form input[type=text],
+	.tpl-default-uikit .uk-form textarea
+		-webkit-appearance: none
+	.tpl-default-uikit .uk-form input,
+	.tpl-default-uikit .uk-form select,
+	.tpl-default-uikit .uk-form textarea
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+		margin: 0
+		border-radius: 0
+		font: inherit
+		color: inherit
+	.tpl-default-uikit .uk-form-row+.uk-form-row
+		margin-top: 15px
+	.tpl-default-uikit .uk-form-row+.uk-form-row 
+		margin-top: 15px
+	.tpl-default-uikit .uk-form>:last-child
+		margin-bottom: 0
+	.tpl-default-uikit .uk-form-horizontal .uk-form-controls
+		margin: 0
+		width: 100%
+	.tpl-default-uikit .uk-form-controls
+		width: 265px
+		position: relative
+	.tpl-default-uikit .uk-button
+    color: #103775
+    background: #ffc800
+    display: block
+    text-shadow: none
+    font-weight: 500
+    width: 100%
+    border: 0
+    border-radius: 0
+    height: 43px
+	.tpl-default-uikit .uk-button:not(:disabled)
+    cursor: pointer
+
+	@media (min-width: 960px)
+		.tpl-default-uikit .uk-form-horizontal .uk-form-controls 
+			width: 100%
+
+	@media (min-width: 960px)
+		.tpl-default-uikit .uk-form-horizontal .uk-form-label
+			width: 200px
+			margin-top: 5px
+			float: left
+			font-weight: 700
+			text-align: right
+
+							
+	// &-form
+	// 	display: flex
+	// 	flex-direction: column
+	// 	width: 444px
+	// 	margin-left: auto
+	// 	padding-top: 67px
+	// 	&__text
+	// 		margin-bottom: 20px
+
+	// 		color: $blue
+	// 		font-size: 18px
+	// 		line-height: 1.55
+	// 		font-weight: 400
+	// 	&__input
+	// 		width: 100%
+	// 		margin-bottom: 15px
+	// 		padding-top: 7px
+	// 		padding-bottom: 7px
+	// 		padding-left: 20px
+
+	// 		border: 1px solid #000000
+	// 		&::-webkit-input-placeholder
+	// 			font-size: 16px
+	// 			line-height: 25px
+	// 			color: #999999
+	// 		&::-moz-placeholder
+	// 			font-size: 16px
+	// 			line-height: 25px
+	// 			color: #999999
+	// 		&:-moz-placeholder
+	// 			font-size: 16px
+	// 			line-height: 25px
+	// 			color: #999999
+	// 		&:-ms-input-placeholder
+	// 			font-size: 16px
+	// 			line-height: 25px
+	// 			color: #999999
+	// 	&__textarea
+	// 		width: 100%
+	// 		margin-bottom: 15px
+	// 		padding-top: 7px
+	// 		padding-left: 20px
+	// 		&::-webkit-input-placeholder
+	// 			font-size: 16px
+	// 			line-height: 25px
+	// 			color: #999999
+	// 		&::-moz-placeholder
+	// 			font-size: 16px
+	// 			line-height: 25px
+	// 			color: #999999
+	// 		&:-moz-placeholder
+	// 			font-size: 16px
+	// 			line-height: 25px
+	// 			color: #999999
+	// 		&:-ms-input-placeholder
+	// 			font-size: 16px
+	// 			line-height: 25px
+	// 			color: #999999
+	// 	&__agreement
+	// 		font-size: 14px
+	// 		line-height: 1.55
+	// 		font-weight: bold
+	// 		letter-spacing: 0.5px
+	// 		color: $blue
+	// 		label
+	// 			text-decoration: underline
+	// 			cursor: pointer
+	// 	&__btn
+	// 		display: block
+	// 		width: 100%
+	// 		margin-top: 15px
+	// 		padding: 16px 0
+
+	// 		font-size: 16px
+	// 		line-height: 1.55
+	// 		font-weight: 400
+	// 		color: $blue
+	// 		text-align: center
+
+	// 		background-color: $yellow
+	// 		border: none

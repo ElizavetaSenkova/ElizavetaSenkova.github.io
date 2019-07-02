@@ -1,0 +1,276 @@
+.assortment
+	position: relative
+
+	background-image: url(../img/assortment/pro/back.jpg)
+	background-position: center center
+	background-size: cover
+	&::before
+		content: ""
+
+		position: absolute
+		left: 0
+		top: 0
+		z-index: 0
+
+		width: 100%
+		height: 880px
+
+		background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.7))
+	&__inner
+		max-width: 1320px
+		margin: 0 auto
+	.custom-dots2
+		position: absolute
+		top: 214px
+		right: -48px
+		z-index: 10
+		.slick-dots
+			margin: 0
+			padding: 0
+			list-style: none
+			li
+				width: 241px
+				padding: 10px 0
+
+				margin-bottom: 20px
+
+				position: relative
+
+				background-color: rgb(91, 145, 206)
+				&:hover
+					right: calc(100% - 194px + 1px)
+			li:nth-child(1), li:nth-child(3)
+				background-color: rgb(194, 8, 26)
+				button
+					background-color: rgb(194, 8, 26)
+			li:nth-child(3)
+				button
+					font-style: italic
+			li:nth-child(4)
+				button
+					font-size: 19px
+					line-height: 21px
+					text-transform: uppercase
+			button
+				margin-left: 20px
+
+				font-size: 28px
+				line-height: 28px
+				font-weight: bold
+				color: white
+				text-align: left
+				
+				border: none
+				background-color: rgb(91, 145, 206)
+	&__slide
+		width: 100%
+		height: 880px
+
+		position: relative
+	
+	// general styles
+	&__title
+		width: 300px
+		padding-top: 50px
+		padding-bottom: 20px
+
+		position: relative
+
+		font-size: 30px
+		line-height: 1.55
+		font-weight: bold
+		color: $blue
+		&::before
+			content: ""
+
+			position: absolute
+			right: 44px
+			top: 62px
+
+			width: 22px
+			height: 22px
+
+			background-color: $yellow
+	&__slide-text
+		font-size: 18px
+		line-height: 1.55
+		font-weight: 500
+		color: $blue
+	&__size-color
+		display: flex
+		margin-bottom: 30px
+	&__size-wrapper
+		margin-right: 90px
+	&__size,
+	&__color,
+	&__addition
+		margin-bottom: 25px
+		margin-top: 20px
+
+		font-size: 22px
+		line-height: 1.55
+		font-weight: bold
+		color: $blue
+	&__size-list
+		margin: 0
+		padding: 0
+
+		list-style: none
+	&__size-item
+		margin-bottom: 14px
+
+		position: relative
+	&__size-img
+		width: 178px
+		height: 58px
+	&__size-text
+		margin: 0
+
+		position: absolute
+		z-index: 1
+		left: 70px
+		top: 16px
+
+		font-size: 15px
+		line-height: 1.55
+		font-weight: bold
+		color: $yellow
+	&__color
+		text-align: center
+	&__color-list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 726px
+		margin: 0
+		padding: 0
+
+		list-style: none
+	&__color-item
+		img
+			width: 160px
+			height: 150px
+		&:nth-child(5),
+		&:nth-child(6)
+			img
+				width: 146px
+				height: 136px
+	&__addition
+		text-align: center	
+	&__addition-wrapper
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 1000px
+		p
+			font-size: 16px
+			line-height: 1.55
+			font-weight: 600
+			color: $blue
+	&__addition-good
+		display: flex
+		justify-content: space-around
+		margin: 0
+		padding: 0
+		list-style: none
+		li
+			display: flex
+			align-items: center
+			width: 340px
+			img
+				width: 170px
+				height: 160px
+			p
+				width: 32%
+
+	// auto
+	&__img-auto
+		width: 70%
+		img
+			width: 300px
+			height: 300px
+
+	// master
+	&__img-master
+		img
+			width: 630px
+			height: 380px
+		
+	// Индикаторная отвертка
+	&__screwdriver-title
+		width: 600px
+		padding-top: 50px
+		padding-bottom: 60px
+
+		position: relative
+
+		font-size: 30px
+		line-height: 1.55
+		font-weight: bold
+		color: $blue
+		&::before
+			content: ""
+
+			position: absolute
+			right: 30px
+			top: 62px
+
+			width: 22px
+			height: 22px
+
+			background-color: $yellow
+	&__screwdriver
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-around
+		margin-bottom: 40px
+
+		position: relative
+	&__circle
+		display: flex
+		justify-content: center
+		align-items: center
+
+		width: 100px
+		height: 100px
+
+		position: absolute
+		top: 0
+		left: 0
+		z-index: 10
+
+		font-size: 48px
+		line-height: 1.55
+		font-weight: bold
+		color: white
+
+		background-color: #ff0000
+		border-radius: 50%
+	&__screwdriver-open
+		width: 620px
+		height: 275px
+	&__screwdriver-close
+		width: 430px
+		height: 240px
+	&__screwdriver-text
+		width: 100%
+		padding-bottom: 30px
+
+		font-size: 18px
+		line-height: 1.55
+		font-weight: 500
+		color: #103775
+	&__screwdriver-wrapper
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 100%
+		p
+			width: 200px
+			padding-top: 15px
+			padding-left: 20px
+
+			font-size: 14px
+			line-height: 1.55
+			font-weight: 500
+			color: #103775

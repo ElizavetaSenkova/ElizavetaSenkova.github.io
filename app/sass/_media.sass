@@ -1,0 +1,568 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+@media (max-width: 1702px)
+	.inner
+		.page-content
+			.assortment
+				&::before
+					height: 1040px
+				.custom-dots2
+					width: 660px
+
+					top: 112px
+					left: 0
+					bottom: 0
+					right: 0
+					margin: auto
+					.slick-dots
+						display: flex
+						li
+							width: 190px
+							margin-bottom: 0
+							margin-right: 20px
+							padding: 0
+							padding-top: 8px
+							&:hover
+								right: unset
+							button
+								display: block
+								margin: 0 auto
+
+								font-size: 22px
+						li:nth-child(4)
+							padding-top: 0
+							button
+								font-size: 15px
+				&__title
+					padding-bottom: 104px	
+				&__slide
+					height: 1040px
+					&::before
+						height: 1040px
+
+@media (max-width: 1450px) 
+	.inner
+		.page-content
+			.parameters
+				.custom-dots
+					width: 486px
+
+					top: 104px
+					left: 0
+					bottom: 0
+					right: 0
+					margin: auto
+					.slick-dots
+						display: flex
+						li
+							width: 137px
+							margin-bottom: 0
+							margin-right: 20px
+							&:hover
+								right: unset
+						li:nth-child(1)
+							display: none
+						li:nth-child(2)::before
+							top: 25px
+							left: 26px
+						li:nth-child(3)::before
+							top: 32px
+							left: 28px
+						li:nth-child(4)::before
+							top: 35px
+							left: 26px
+						li:nth-child(5)::before
+							left: 30px
+						button
+							width: unset
+							margin: 0
+
+							font-size: 0
+				&__inner
+					max-width: 800px
+				&__title
+					width: unset
+					margin-bottom: 132px
+
+					text-align: center
+					&::before
+						right: 128px
+				&__slide
+					.anim-wrap
+						display: none
+				&__info
+					display: none
+				&__info-block
+					display: block
+					max-width: 800px
+					margin: 0 auto
+				&__moile-title
+					display: block
+				&__gost
+					display: none
+				
+
+
+@media (max-width: 1346px) 
+	.inner
+		.page-content
+			.assortment
+				&__title
+					margin: 0 auto
+
+					text-align: center
+					&::before
+						right: 12px
+				&__slide-text
+					width: 800px
+					margin: 0 auto
+				&__size-color
+					flex-direction: column
+				&__size-wrapper
+					display: flex
+					width: 800px
+					margin: 0 auto
+					padding-top: 20px
+				&__size-list
+					display: flex
+					flex-wrap: wrap
+					justify-content: space-around
+				&__size
+					width: 356px
+				&__color-wrapper
+					display: flex
+					width: 800px
+					margin: 0 auto
+				&__color
+					width: 100px
+				&__addition-inner
+					width: 800px
+					margin: 0 auto
+				&__addition-wrapper
+					width: 800px
+				&__addition-name
+					width: 200px
+				&__addition-good
+					flex-wrap: wrap
+					width: unset
+					li
+						display: flex
+						width: 290px
+				&__screwdriver-title
+					margin: 0 auto
+					padding-bottom: 82px
+				&__screwdriver-text
+					width: 800px
+					margin: 0 auto
+				&__circle
+					left: 70px
+				&__screwdriver-open
+					width: 376px
+					height: 186px
+				&__screwdriver-close
+					width: 284px
+					height: 160px
+				&__screwdriver-wrapper
+					width: 800px
+					margin: 0 auto
+
+			.shops
+				&__inner
+					max-width: 800px
+			
+			.comments
+				max-width: 800px
+
+@media (max-width: 1250px) 
+	.inner
+		.page-content
+			.authorization
+				&__inner
+					max-width: 576px
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.overlay
+		background: #000
+		height: 100%
+		opacity: 0.5
+		position: fixed
+		width: 100%
+		z-index: 100
+		top: 0
+		left: 0
+		display: none
+	.inner
+		.page-header
+			&__nav-wrapper
+				display: none
+				max-width: 400px
+				height: 100%
+
+				position: fixed
+				top: 0
+				left: 0
+				z-index: 200
+				overflow: hidden
+
+				background-color: $blue
+			&__nav
+				flex-direction: column
+			&__item
+				margin-bottom: 15px
+			&__link
+				font-size: 20px
+			&__menu-wrapper
+				display: block
+				button
+					margin-left: 50px
+
+					background-color: inherit
+					border: none
+			&__close-menu
+				display: block
+				margin-left: 340px
+				margin-top: 20px
+
+				background-color: inherit
+				border: none
+
+
+	.preview
+		&__tape-big
+			display: none !important
+// ≥992px
++media-breakpoint-down(md)
+	.inner
+		.page-header
+			&__enter
+				display: none
+
+		.page-content
+			.contacts
+				.tpl-default-uikit
+					padding-left: 0
+					justify-content: flex-start
+			
+			.agreement
+				&__title
+					width: 576px
+					&::before
+						right: 162px
+						top: 58px
+
+		.page-footer
+			&__feedback-desktop
+				display: none
+			&__feedback-mobile
+				display: block
+			&__text
+				font-size: 14px
+	
+
+@media (max-width: 940px) 
+	.inner
+		.page-content 
+			.parameters
+				&__inner
+					max-width: 500px
+				&__title
+					&::before
+						right: -20px
+
+@media (max-width: 846px) 
+	.inner
+		.page-content
+			.assortment
+				&::before
+					height: 1282px
+				.custom-dots2
+					width: 450px
+				&__slide
+					height: 1282px
+				&__slide-text,
+				&__size-wrapper
+					width: 538px
+				&__color-wrapper
+					width: 538px
+				&__color
+					margin-right: 56px
+				&__color-list
+					justify-content: unset
+					li
+						img
+							width: 136px
+							height: 126px
+					li:nth-child(5) img, li:nth-child(6) img
+						width: 126px
+						height: 116px
+				&__addition-inner,
+				&__addition-wrapper
+					width: 538px
+				&__screwdriver-text,
+				&__screwdriver-wrapper
+					width: 538px
+				&__img-master
+					.assortment__color-list
+						img
+							width: 250px
+							height: 150px
+			.shops
+				height: 900px
+				&::before
+					height: 900px
+				&__inner
+					max-width: 538px
+			.comments
+				max-width: 538px
+
+	.popup-feedback
+		&__inner
+			width: 500px
+
+
+// ≥768px
++media-breakpoint-down(sm)
+	.inner
+		.page-header
+			&__enter-tape
+				justify-content: unset
+			&__tape-list
+				li:nth-child(2)
+					display: none
+
+		.preview
+			&__tape-prof
+				width: 200px
+				height: 62px
+			&__tapes-ad
+				height: 46vh
+			
+
+// ≥576px
++media-breakpoint-down(xs)
+	.inner
+		.page-header
+			&__enter-tape
+				display: none
+			&__nav-wrapper
+				width: 320px
+			&__close-menu
+				margin-left: 260px
+			&__menu-wrapper
+				button
+					margin-left: 0
+
+		.page-content
+
+			.authorization
+				&__inner
+					max-width: 320px
+				&__title
+					font-size: 19px	
+				.form_auth
+					width: 320px
+
+			.parameters
+				.custom-dots
+					width: 297px
+
+					top: 135px
+					.slick-dots
+						flex-wrap: wrap
+						justify-content: space-between
+						li
+							width: 128px
+							padding: 15px 0
+							margin-bottom: 12px
+							&::before
+								width: 40px
+
+								top: 12px
+						li:nth-child(2)
+							&::before
+								top: 12px
+								left: 42px
+						li:nth-child(3)
+							&::before
+								top: 20px
+								left: 40px
+						li:nth-child(4)
+							&::before
+								top: 20px
+								left: 40px
+						li:nth-child(5)
+							&::before
+								top: 8px
+								left: 38px
+	
+				&__inner
+					max-width: 320px
+					div
+						margin: 0 auto
+				&__title
+					margin-bottom: 186px
+
+					font-size: 28px
+					&::before
+						top: 31px
+						right: -3px
+
+			.assortment
+				&::before
+					height: 1740px
+				&__slide
+					height: 1740px
+					div
+						width: 320px
+						margin: 0 auto
+				.custom-dots2
+					width: 320px
+					.slick-dots
+						flex-wrap: wrap
+						li 
+							width: 140px
+							margin-bottom: 15px
+							button
+								width: 80px
+						li:nth-child(1), li:nth-child(2)
+							padding-bottom: 6px
+						li:nth-child(4) 
+							button
+								width: 124px
+								text-align: center
+								font-size: 14px
+				&__title
+					padding-bottom: 140px
+
+					font-size: 26px
+					&::before
+						top: 60px
+				&__slide-text,
+				&__size-wrapper
+					width: 320px
+					flex-direction: column
+				&__size-img
+					width: 158px
+				&__size-text
+					left: 56px
+				&__color-wrapper
+					width: 320px
+					flex-direction: column
+				&__color
+					text-align: left
+				&__color-list
+					width: 320px		
+					justify-content: space-evenly
+				&__addition-inner
+					width: 320px
+				&__addition
+					text-align: left
+				&__addition-wrapper
+					width: 320px
+					flex-direction: column
+				&__img-master
+					.assortment__color
+						width: 100%
+				&__screwdriver
+					padding-top: 50px
+				&__screwdriver-title
+					width: 320px
+					padding-top: 26px
+					padding-bottom: 120px
+
+					font-size: 25px
+					text-align: center
+					&::before
+						right: 10px
+						top: 72px
+				&__circle
+					width: 70px !important
+					height: 70px
+
+					top: 20px
+					left: 134px
+
+					font-size: 32px
+				&__screwdriver-open
+					width: 300px
+					height: 160px
+				&__screwdriver-text
+					width: 320px
+				&__screwdriver-wrapper
+					width: 320px
+				&__screwdriver-item
+					display: flex
+					align-items: center
+					padding-bottom: 20px
+					img
+						width: 101px
+						height: 85px
+					p
+						margin: 0
+						padding-top: 0
+
+			.shops
+				height: 1250px
+				&::before
+					height: 1250px
+				&__inner
+					max-width: 320px
+				&__title
+					width: 100%
+					&::before
+						display: none
+
+			.comments
+				max-width: 320px
+				&__title
+					width: 100%
+					&::before
+						right: 40px
+						top: 108px
+			.agreement
+				&__title
+					width: 320px
+					&::before
+						right: 162px
+						top: 150px
+
+		.page-footer
+			display: flex
+			flex-direction: column
+			&__feedback-mobile
+				display: none
+			&__feedback-desktop
+				display: block
+			&__feedback
+				display: block
+				margin: 0 auto
+			&__text
+				margin-bottom: 40px
+
+				text-align: center
+			&__logo
+				margin-bottom: 40px
+
+	.popup-feedback
+		&__inner
+			width: 306px
+				
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
