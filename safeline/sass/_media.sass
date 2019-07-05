@@ -6,8 +6,6 @@
 	.inner
 		.page-content
 			.assortment
-				&::before
-					height: 1040px
 				.custom-dots2
 					width: 660px
 
@@ -107,8 +105,13 @@
 					margin: 0 auto
 
 			.shops
+				height: 100%
+				&::before
+					height: 100%
 				&__inner
 					max-width: 800px
+				&__list
+					flex-wrap: wrap
 			
 			.comments
 				max-width: 800px
@@ -271,8 +274,6 @@
 	.inner
 		.page-content
 			.assortment
-				&::before
-					height: 1282px
 				.custom-dots2
 					width: 450px
 				&__slide
@@ -305,9 +306,6 @@
 							width: 250px
 							height: 150px
 			.shops
-				height: 900px
-				&::before
-					height: 900px
 				&__inner
 					max-width: 538px
 			.comments
@@ -406,8 +404,6 @@
 						right: -3px
 
 			.assortment
-				&::before
-					height: 1740px
 				&__slide
 					height: 1740px
 					div
@@ -500,15 +496,14 @@
 						padding-top: 0
 
 			.shops
-				height: 1250px
-				&::before
-					height: 1250px
 				&__inner
 					max-width: 320px
 				&__title
 					width: 100%
 					&::before
 						display: none
+				&__item
+					margin: 0 auto
 
 			.comments
 				max-width: 320px
