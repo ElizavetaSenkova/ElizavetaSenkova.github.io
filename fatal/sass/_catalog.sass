@@ -1,0 +1,49 @@
+.catalog
+	.slick-dots
+		display: flex
+		justify-content: center
+
+		position: relative
+
+		margin: 0
+		padding: 0
+		list-style: none
+		li
+			&:hover
+				button
+					color: #333333
+			button
+				font-size: 18px
+				line-height: 18px
+				color: #c9c9c9
+
+				background-color: inherit
+				border: none
+	.slick-prev
+		display: none !important
+	.slick-next
+		position: absolute
+		top: 98.2%
+		left: 52%
+		z-index: 100
+
+		width: 6px
+		height: 10px
+
+		font-size: 0
+	&__inner
+		max-width: 1570px
+		margin: 0 auto
+		padding: 78px 0
+	&__card
+		padding-bottom: 35px
+		img
+			box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.1)
+		p
+			padding-top: 25px
+
+			font-size: 19px
+			line-height: 20px
+			color: black
+			text-align: center
+	
