@@ -51,7 +51,16 @@ $(function() {
 					slidesToShow: 2,
 					slidesToScroll: 2,
 					arrows: false,
-					dots: true,
+					dots: false,
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: false,
+					dots: false,
 				}
 			},
 		]
@@ -94,9 +103,57 @@ $(function() {
 		arrows: true,
 		nextArrow: '<img class="slick-next" src="img/catalog/arrow-right.png"></img>',
 		rows: 2,
+		responsive: [
+			{
+				breakpoint: 1520,
+				settings: {
+					slidesToShow: 3,
+					slidesToScroll: 3,
+				}
+			},
+			{
+				breakpoint: 780,
+				settings: {
+					slidesToShow: 2,
+					slidesToScroll: 2,
+				}
+			},
+			{
+				breakpoint: 580,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1,
+				}
+			},
+		]
 	});
 
 	// catalog-slider
+
+
+	let magicGrid = new MagicGrid({
+		container: ".grid-container",
+		animate: true,
+		gutter: 30,
+		static: true,
+		useMin: true
+	});
+
+		magicGrid.listen();
+		
+	// menu
+
+	$('.page-header__open-menu').click(function() {
+		$('.page-header__nav-wrapper').show();
+		$('.overlay').show();
+	});
+
+	$('.page-header__close-menu').click(function() {
+		$('.page-header__nav-wrapper').hide();
+		$('.overlay').hide();
+	});
+
+	// menu
 
 
 });
