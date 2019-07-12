@@ -22,17 +22,184 @@
 				font-size: 30px
 
 
+@media (max-width: 1500px)
+	.page-content
+
+		.catalog
+			&__inner
+				max-width: 1300px
+
+@media (max-width: 1290px)
+	.page-content
+
+		.preview
+			&__number
+				right: 328px
+			.slick-prev
+				right: 480px
+			.slick-next
+				right: 330px
+			
+
 // ≥1200px
 +media-breakpoint-down(lg)
+	.overlay
+		background: #000
+		height: 100%
+		opacity: .5
+		position: fixed
+		width: 100%
+		z-index: 100
+		top: 0
+		left: 0
+		display: none
+
+	.page-content
+
+		.imagery
+			.slick-prev
+				left: 200px
+			.slick-next
+				right: 200px
+			&__inner
+				flex-wrap: wrap
+			&__images-inner
+				margin-right: 0
+				margin: 0 auto
+				margin-bottom: 30px
+			&__info-title
+				text-align: center
+			&__watch-all
+				margin-left: unset
+				margin: 0 auto
+
+		.preview
+			&__inner
+				max-width: 992px
+			&__title-bottom
+				font-size: 120px
+				line-height: 120px
+			&__title
+				padding-left: 210px
+			&__text
+				margin-left: auto
+
+
+		
+
 
 // ≥992px
 +media-breakpoint-down(md)
 
+	.page-header
+		&__inner
+			.row
+				flex-wrap: nowrap
+		&__open-menu
+			float: right
+		&__menu-wrapper
+			display: block
+		&__nav-wrapper
+			display: none
+			padding: 20px 40px
+
+			max-width: 400px
+			height: 100%
+			position: fixed
+			top: 0
+			right: 0
+			z-index: 200
+			overflow: hidden
+			background-color: white
+		&__nav
+			flex-direction: column
+			margin-bottom: 20px
+			li 
+				margin-right: 0
+				margin-bottom: 10px
+				a
+					font-size: 23px
+		&__info
+			flex-direction: column
+		&__close-menu
+			display: block
+			margin-left: auto
+		&__phone
+			display: block
+			font-size: 22px
+			margin-bottom: 10px
+		&__sign
+			font-size: 22px
+
+	.page-content
+
+		.imagery
+			.slick-next
+				right: 100px
+			.slick-prev
+				left: 100px
+
+		.preview
+			.slick-dots
+				display: none
+			&__inner
+				max-width: 768px
+
+
+
 // ≥768px
 +media-breakpoint-down(sm)
+	.page-content
+
+		.imagery
+			.slick-arrow
+				font-size: 17px
+			.slick-next
+				right: 50px
+			.slick-prev
+				left: 50px
+		
+		.preview
+			&__title-wrap
+				width: unset
+
+				text-align: center
+			&__title-bottom
+				margin-left: unset
+			&__title
+				padding-left: unset
+			&__text-wrapper
+				display: block
+			&__text
+				margin-left: unset
+				text-align: center
+			&__more
+				margin: 0 auto
+				margin-bottom: 112px
+			&__number
+				right: 306px
+			.slick-prev
+				right: 458px
+
 
 // ≥576px
 +media-breakpoint-down(xs)
+	.page-content
+
+		.preview
+			&__number
+				right: 200px
+			.slick-prev
+				right: 350px
+			.slick-next
+				right: 202px
+			&__title-bottom
+				font-size: 80px
+		
+		.collections
+			&__see-more
+				width: 100%
+			
 
 
 /*==========  Mobile First  ==========*/

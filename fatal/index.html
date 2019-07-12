@@ -23,6 +23,8 @@
 
 	<body>
 
+		<div class="overlay"></div>
+
 			<!-- HEADER -->
 			<header class="page-header">
 				<div class="page-header__inner">
@@ -33,7 +35,14 @@
 							<img class="page-header__logo" src="img/header/logo-header.png" alt="" width="264px" height="75px">
 						</div>
 
-						<div class="col-lg-6">
+						<div class="col-lg-5 page-header__menu-wrapper">
+							<button class="page-header__open-menu" type="button">
+								<img src="img/header/menu-open.png" alt="" width="25px" height="25px">
+							</button>
+						</div>
+
+						<div class="col-lg-9 page-header__nav-wrapper">
+							<button class="page-header__close-menu" type="button"><img src="img/header/menu-close.png" alt="" width="45px" height="45px"></button>
 							<ul class="page-header__nav">
 								<li><a href="#">Главная</a></li>
 								<li><a href="#">Коллекции</a></li>
@@ -42,9 +51,6 @@
 								<li><a href="#">Каталог</a></li>
 								<li><a href="#">Контакты</a></li>
 							</ul>
-						</div>
-
-						<div class="col-lg-3">
 
 							<div class="page-header__info">
 								<a class="page-header__phone" href="tel:+79851362838">+7 985 136-28-38</a>
@@ -52,6 +58,7 @@
 							</div>
 
 						</div>
+
 
 					</div>
 
@@ -62,7 +69,7 @@
 			<!-- MAIN -->
 			<main class="page-content">
 
-				<section class="preview">
+				<section class="preview container-fluid">
 
 					<div class="preview__inner">
 
@@ -85,7 +92,7 @@
 											</div>
 										</div>
 					
-										<div class="col-lg-12">
+										<div class="col-lg-12 preview__text-wrapper">
 											<p class="preview__text">
 												Приковывайте к себе внимание каждого,<br>упивайтесь вашей соблазнительностью!
 											</p>
@@ -116,7 +123,7 @@
 											</div>
 										</div>
 
-										<div class="col-lg-12">
+										<div class="col-lg-12 preview__text-wrapper">
 											<p class="preview__text">
 												Приковывайте к себе внимание каждого,<br>упивайтесь вашей соблазнительностью!
 											</p>
@@ -149,7 +156,7 @@
 
 				
 
-										<div class="col-lg-12">
+										<div class="col-lg-12 preview__text-wrapper">
 											<p class="preview__text">
 												Приковывайте к себе внимание каждого,<br>упивайтесь вашей соблазнительностью!
 											</p>
@@ -202,7 +209,7 @@
 				</section>
 
 				<section class="collections">
-					<div class="collections__inner">
+					<div class="collections__inner container-fluid">
 
 						<div class="row">
 							<div class="col-lg-12">
@@ -211,7 +218,7 @@
 								</h1>
 							</div>
 						</div>
-						
+					</div>
 						<div id="collections__slider">
 							
 							<!-- 1 slide -->
@@ -265,7 +272,7 @@
 							</a>
 
 						</div>
-
+						<div class="collections__inner  container-fluid">
 						<div class="row">
 							<div class="col-lg-12">
 								<a class="collections__see-more" href="#">
@@ -273,7 +280,7 @@
 								</a>
 							</div>
 						</div>
-
+					</div>
 
 					</div>
 				</section>
@@ -818,7 +825,7 @@
 					</div>
 				</section>
 
-				<section class="blog">
+				<section class="blog container-fluid">
 					<div class="blog__inner">
 
 						<div class="row">
@@ -829,171 +836,159 @@
 							</div>
 						</div>
 
-						<div class="row">
+						<div class="grid-container">
 
 							<!-- 1 column -->
-							<div class="col-lg-3">
-								<div class="blog__card-wrapper">
-								<a href="#" class="blog__big ">
-
-									<img src="img/blog/blog-1.png" alt="">
-
-									<div class="blog__big-info">
-
-										<h2 class="blog__big-title">
-												Bright partitions and chunks of marble define Loreak
-										</h2>
-
-										<div class="blog__big-active">
-											<p class="blog__big-date">August 16, 2020</p>
-											<p class="blog__big-comments"> 5 Comments</p>
-										</div>
-										
-									</div>
-
-								</a>
-
-								<a href="#" class="blog__small">
-
-									<h2 class="blog__small-title">
-											Ace & Tate's Copenhagen eyewear store features
-									</h2>
-
-									<p class="blog__small-author">
-											Melissa Nelson
-									</p>
-
-								</a>
-							</div>
+							<div class="item1">
+								
+									<a href="#" class="blog__big ">
+											<img src="img/blog/blog-1.png" alt="">
+											<div class="blog__big-info">
+												<h2 class="blog__big-title">
+														Bright partitions and chunks of marble define Loreak
+												</h2>
+												<div class="blog__big-active">
+													<p class="blog__big-date">August 16, 2020</p>
+													<p class="blog__big-comments"> 5 Comments</p>
+												</div>
+												
+											</div>
+										</a>
 
 							</div>
 							<!-- 1 column -->
 
 							<!-- 2 column -->
-							<div class="col-lg-3">
+							<div class="item2">
 
-								<div class="blog__card-wrapper">
-								<a href="#" class="blog__small">
-
-									<h2 class="blog__small-title">
-											Что лучше надеть под портупею?
-									</h2>
-
-									<div class="blog__big-active">
-										<p class="blog__big-date">August 16, 2020</p>
-										<p class="blog__big-comments">5 Comments</p>
-									</div>
-
-								</a>
-
-								<a href="#" class="blog__big">
-
-									<img src="img/blog/blog-2.png" alt="">
-
-									<div class="blog__big-info">
-
-										<h2 class="blog__big-title">
-												Dan Brunn plants olive tree in centre of RTA Melrose 
-										</h2>
-
-										<div class="blog__big-active">
-											<p class="blog__big-date">August 16, 2020  </p>
-											<p class="blog__big-comments">5 Comments</p>
-										</div>
-										
-									</div>
-
-								</a>
-							</div>
+									<a href="#" class="blog__small">
+											<h2 class="blog__small-title">
+													Ace & Tate's Copenhagen eyewear store features
+											</h2>
+											<p class="blog__small-author">
+													Melissa Nelson
+											</p>
+										</a>
 
 							</div>
 							<!-- 2 column -->
 
 							<!-- 3 column -->
-							<div class="col-lg-3">
+							<div class="item3">
 
-								<div class="blog__card-wrapper">
-								<a href="#" class="blog__big">
-
-									<img src="img/blog/blog-3.png" alt="">
-
-									<div class="blog__big-info">
-
-										<h2 class="blog__big-title">
-												Backstage cъемок Коллекции 4
-										</h2>
-
-										<div class="blog__big-active">
-											<p class="blog__big-date">August 16, 2020</p>
-											<p class="blog__big-comments">5 Comments</p>
-										</div>
-										
-									</div>
-
-								</a>
-
-								<a href="#" class="blog__small">
-
-									<h2 class="blog__small-title">
-											Valerio Olgiati uses sky blue marble for interiors
-									</h2>
-
-									<p class="blog__small-author">
-										Frances Barnett
-									</p>
-
-								</a>
-							</div>
+									<a href="#" class="blog__small">
+											<h2 class="blog__small-title">
+													Что лучше надеть под портупею?
+											</h2>
+											<div class="blog__big-active">
+												<p class="blog__big-date">August 16, 2020</p>
+												<p class="blog__big-comments">5 Comments</p>
+											</div>
+										</a>
 
 							</div>
 							<!-- 3 column -->
 
 							<!-- 4 column -->
-							<div class="col-lg-3">
+							<div class="item4">
 
-								<div class="blog__card-wrapper">
-								<a href="#" class="blog__small">
-
-									<h2 class="blog__small-title">
-											Instagram photo inspires brightly hued terrarium
-									</h2>
-
-									<div class="blog__big-active">
-										<p class="blog__big-date">August 16, 2020  </p>
-										<p class="blog__big-comments">5 Comments</p>
-									</div>
-
-								</a>
-
-								<a href="#" class="blog__big">
-
-									<img src="img/blog/blog-4.png" alt="">
-
-									<div class="blog__big-info">
-
-										<h2 class="blog__big-title">
-												Ciszak Dalmas integrates materials from fashion
-										</h2>
-
-										<div class="blog__big-active">
-											<p class="blog__big-date">August 16, 2020</p>
-											<p class="blog__big-comments">5 Comments</p>
-										</div>
-										
-									</div>
-
-								</a>
-							</div>
+								  <a href="#" class="blog__big">
+											<img src="img/blog/blog-2.png" alt="">
+											<div class="blog__big-info">
+												<h2 class="blog__big-title">
+														Dan Brunn plants olive tree in centre of RTA Melrose
+												</h2>
+												<div class="blog__big-active">
+													<p class="blog__big-date">August 16, 2020 </p>
+													<p class="blog__big-comments">5 Comments</p>
+												</div>
+												
+											</div>
+										</a>
 
 							</div>
 							<!-- 4 column -->
+
+							<!-- 5 column -->
+							<div class="item4">
+
+									<a href="#" class="blog__big">
+											<img src="img/blog/blog-3.png" alt="">
+											<div class="blog__big-info">
+												<h2 class="blog__big-title">
+														Backstage cъемок Коллекции 4
+												</h2>
+												<div class="blog__big-active">
+													<p class="blog__big-date">August 16, 2020</p>
+													<p class="blog__big-comments">5 Comments</p>
+												</div>
+												
+											</div>
+										</a>
+	
+								</div>
+								<!-- 5 column -->
+
+								<!-- 6 column -->
+							<div class="item4">
+
+									<a href="#" class="blog__small">
+											<h2 class="blog__small-title">
+													Valerio Olgiati uses sky blue marble for interiors
+											</h2>
+											<p class="blog__small-author">
+												Frances Barnett
+											</p>
+										</a>
+	
+								</div>
+								<!-- 6 column -->
+
+							<!-- 7 column -->
+							<div class="item4">
+
+									<a href="#" class="blog__small">
+											<h2 class="blog__small-title">
+													Instagram photo inspires brightly hued terrarium
+											</h2>
+											<div class="blog__big-active">
+												<p class="blog__big-date">August 16, 2020 </p>
+												<p class="blog__big-comments">5 Comments</p>
+											</div>
+										</a>
+	
+								</div>
+								<!-- 7 column -->
+
+									<!-- 8 column -->
+							<div class="item4">
+
+									<a href="#" class="blog__big">
+											<img src="img/blog/blog-4.png" alt="">
+											<div class="blog__big-info">
+												<h2 class="blog__big-title">
+														Ciszak Dalmas integrates materials from fashion
+												</h2>
+												<div class="blog__big-active">
+													<p class="blog__big-date">August 16, 2020</p>
+													<p class="blog__big-comments">5 Comments</p>
+												</div>
+												
+											</div>
+										</a>
+		
+		
+								</div>
+								<!-- 8 column -->
+
+
 
 						</div>
 
 					</div>
 				</section>
 
-				<section class="catalog">
+				<section class="catalog container-fluid">
 					<div class="catalog__inner">
 
 
@@ -1148,7 +1143,7 @@
 			<!-- MAIN -->
 
 			<!-- FOOTER -->
-			<footer class="page-footer">
+			<footer class="page-footer  container-fluid">
 				<div class="page-footer__inner">
 
 					<div class="row">
