@@ -29,6 +29,10 @@
 			&__inner
 				max-width: 1300px
 
+@media (max-width: 1300px)
+	.page-header__inner
+			padding: 10px 10px
+
 @media (max-width: 1290px)
 	.page-content
 
@@ -43,6 +47,11 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+	.page-header__logo
+		max-width: 180px
+		height: auto
+	.page-header__nav li a
+		font-size: 11.8px
 	.overlay
 		background: #000
 		height: 100%
@@ -144,7 +153,33 @@
 				display: none
 			&__inner
 				max-width: 768px
+		
+		.slip
+			&__text-wrap
+				order: 1
+			&__title-wrap
+				order: 2
+			&__slider-wrap
+				order: 2
+			.slick-track
+				flex-direction: row
+			.slider-nav .slick-list .slick-track .slick-slide img
+				width: 80px
+				margin: 0 auto
 
+		.catalog
+			.slick-next
+				top: 98%
+				left: 54%
+
+
+@media (max-width: 780px)
+	.page-content
+
+		.catalog
+			.slick-next
+				top: 98.5%
+				left: 56.5%
 
 
 // ≥768px
@@ -182,9 +217,34 @@
 				right: 458px
 
 
+@media (max-width: 580px)
+	.page-content
+
+		.catalog
+			.slick-next
+				top: 98.8%
+				left: 68%
+			&__slide
+				padding-right: 0
+
+		.perfect
+			&__slide
+				padding-right: 0
+
 // ≥576px
 +media-breakpoint-down(xs)
+	.page-header
+		&__inner
+			padding: 10px 10px
+		&__logo
+			width: 190px
+			height: 56px
+
 	.page-content
+
+		.company
+			&__title
+				margin-left: 0
 
 		.preview
 			&__number
@@ -199,6 +259,34 @@
 		.collections
 			&__see-more
 				width: 100%
+
+@media (max-width: 480px)
+	.page-content
+
+		.catalog
+			.slick-next
+				top: 98.4%
+				left: 70%
+
+@media (max-width: 410px)
+	.page-content
+
+		.preview
+			&__number
+				right: 104px
+			.slick-next
+				right: 102px
+			.slick-prev
+				right: 260px
+
+@media (max-width: 380px)
+	.page-content
+
+		.catalog
+			.slick-next
+				top: 98.3%
+				left: 74%
+
 			
 
 
