@@ -1,0 +1,129 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+@import "page-header"
+
+@import "video"
+@import "profile-type"
+
+@import "menu"
+
+@import "user-page"
+
+@import "news-card"
+
+@import "enter-block"
+
+@import "reg-patient"
+
+@import "reg-specialist"
+
+@import "doctors"
+
+@import "edit"
+
+@import "complex"
+
+@import "communication"
+
+@import "photo"
+
+@import "photoalbum"
+
+@import "subscribes"
+
+@import "calendar"
+
+@import "comments"
+
+@import "experts"
+
+@import "card"
+
+@import "gp-404"
+
+@import "help"
+
+@import "more"
+
+@import "pat-card"
+
+@import "patients"
+
+@import "messages"
+
+@import "surveys"
+
+@import "card-edit"
+
+@import "favourites"
+
+@import "register"
+
+@import "page-footer"
+
+@import "popup"
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.container
+	max-width: 1582px
+
+.my-page-inner
+	max-width: 1246px
+	margin: 0 auto
+	padding: 0 15px
+
+.message-page-inner
+	max-width: 1100px
+	margin: 0 auto
+	padding: 0 15px
+
+.internal-page
+	position: relative
+	overflow: hidden
+
+.main
+	width: calc(100% - 104px)
+	margin-left: 104px
+	position: relative
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+
+@import "media" // Always at the end

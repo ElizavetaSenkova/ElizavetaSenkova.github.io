@@ -1,0 +1,134 @@
+.card-edit
+	display: flex
+	flex-direction: column
+	&__bottom
+		border-bottom: none !important
+	&__top
+		padding-top: 0 !important
+
+		border-top: none !important
+	p
+		margin: 0
+		margin-bottom: 10px
+		label
+			margin-bottom: 8px
+			font-size: 22px
+			line-height: 22px
+		input
+			width: 792px
+			padding: 12px 12px 8px 12px
+			border: 1px solid #a2a2a2
+			&::-webkit-input-placeholder
+				font-size: 22px
+				line-height: 22px
+				color: #a2a2a2
+			&::-moz-placeholder
+				font-size: 22px
+				line-height: 22px
+				color: #a2a2a2
+			&:-moz-placeholder
+				font-size: 22px
+				line-height: 22px
+				color: #a2a2a2
+			&:-ms-input-placeholder
+				font-size: 22px
+				line-height: 22px
+				color: #a2a2a2
+		.jq-file
+			width: 792px
+			height: 48px
+			padding: 5px 20px
+
+			border: 1px solid #9a9a9a
+			box-shadow: none
+			border-radius: 0
+		.jq-file:hover .jq-file__browse
+			background: none
+		.jq-file__name
+			padding: 0
+
+			font-size: 0
+
+			background-image: url(../img/edit/file.png)
+			background-size: contain
+			background-repeat: no-repeat
+			box-shadow: none
+			border: none
+		.jq-file__browse
+			top: 15px
+			left: 74px
+
+			font-size: 0
+
+			border: none
+			box-shadow: none
+			background: none
+	h3
+		margin-top: 12px
+		margin-bottom: 25px
+		font-size: 30px
+		line-height: 30px
+		font-weight: 400
+	.card__form-wrap
+		display: flex
+		flex-wrap: wrap
+		align-items: center
+		margin-bottom: 255px
+	.card__form-wrap-new
+		margin-bottom: 18px
+		textarea
+			width: 790px
+			padding: 10px
+
+			border: 1px solid #9a9a9a
+			&::-webkit-input-placeholder
+				font-size: 20px
+				line-height: 25px
+				color: #999999
+			&::-moz-placeholder
+				font-size: 20px
+				line-height: 25px
+				color: #999999
+			&:-moz-placeholder
+				font-size: 20px
+				line-height: 25px
+				color: #999999
+			&:-ms-input-placeholder
+				font-size: 20px
+				line-height: 25px
+				color: #999999
+		a
+			display: block
+			padding-left: 55px
+
+			position: relative
+
+			font-size: 22px
+			line-height: 22px
+			color: #333
+			&::before
+				content: ""
+
+				position: absolute
+				left: 20px
+				top: 0px
+
+				width: 22px
+				height: 22px
+
+				background: url(../img/card/plus.png)
+				background-size: contain
+				background-repeat: no-repeat
+	button
+		width: 216px
+		margin-top: 20px
+		margin-left: auto
+		padding: 5px 0
+
+		font-size: 22px
+		line-height: 22px
+		color: #fff
+
+		border: none
+		background-color: #353535
+		border-radius: 5px
