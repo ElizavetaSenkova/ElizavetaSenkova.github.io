@@ -3,6 +3,8 @@
 	padding-top: 35px
 	padding-bottom: 40px
 	&__avatar
+		max-width: 356px
+
 		position: relative
 		&-center
 			margin-bottom: 10px
@@ -15,12 +17,11 @@
 	&__avatar-link
 		display: none
 
-		width: 356px
-		padding: 18px 90px 18px 1px
+		width: 100%
+		padding: 18px 80px 18px 1px
 
 		position: absolute
 		bottom: 0
-		right: 29px
 		opacity: 0.8
 
 		font-size: 20px
@@ -222,14 +223,15 @@
 				height: 38px
 
 				position: absolute
+				z-index: 100
 
 				font-size: 0
 
-				background-color: none
+				background-color: white
 				border: none
 				outline: none
 			.slick-prev
-				left: -12px
+				left: -9px
 				top: 54px
 				&::before
 					content: ""
