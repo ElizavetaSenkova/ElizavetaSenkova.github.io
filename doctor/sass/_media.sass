@@ -3,6 +3,18 @@
 
 /*==========  Desktop First  ==========*/
 
+
+@media (max-width: 1876px)
+	.internal-page
+		.main
+			.message-page-inner
+				.messages
+					&__card-hide
+						right: -1px
+						z-index: 100
+
+						background-color: white
+
 @media (max-width: 1380px)
 	.internal-page
 		.main
@@ -27,6 +39,17 @@
 	.internal-page
 		.main
 			.my-page-inner
+
+				.card
+					&__personal-notice
+						position: absolute
+						top: 26px
+						right: 10px
+					&__personal
+						width: 780px
+						position: relative
+					&__personal-absolute
+						width: unset
 
 				.gp-404
 					padding-top: 200px
@@ -62,21 +85,23 @@
 		.main
 			.my-page-inner
 
-				.card
-					&__wrap
-						position: relative
-					&__personal-notice
-						width: 230px
-
-						position: absolute
-						top: 26px
-						left: 373px
-					&__personal-add
-						width: 780px
+				// .card
+				// 	&__personal-notice
+				// 		position: absolute
+				// 		top: 26px
+				// 		right: 10px
+				// 	&__personal
+				// 		width: 780px
+				// 		position: relative
+				// 	&__personal-absolute
+				// 		width: unset
 
 				.gp-404
 					padding-top: 210px
 
+	.page-footer
+		&__inner
+			padding: 36px 28px 20px 28px
 
 @media (max-width: 1100px)
 	.internal-page
