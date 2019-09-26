@@ -98,7 +98,35 @@
 	margin: auto
 	z-index: 110
 	&__inner
+		padding: 30px
+
 		background-color: white
+	&__form
+		display: flex
+		flex-direction: column
+		input
+			width: 100%
+			margin-top: 25px
+			margin-bottom: 45px
+			padding: 5px 5px 5px 10px
+
+			border: 1px solid #b8b8b8
+			border-radius: 18px
+			background-color: #fff
+		button
+			width: 160px
+			margin-top: auto
+			margin-left: auto
+			padding: 8px 0
+
+			font-size: 18px
+			line-height: 18px
+			font-weight: 400
+			color: #fff
+
+			background-color: #353535
+			border-radius: 5px
+			outline: 0
 // popup-photo
 
 
@@ -109,7 +137,71 @@
 	margin: auto
 	z-index: 110
 	&__inner
+		padding: 30px
+
 		background-color: white
+	&__form
+		display: flex
+		flex-direction: column
+		.jq-file
+			width: 100%
+			margin-top: 30px
+			margin-bottom: 40px
+			padding: 12px 12px 8px 12px
+
+			border: 1px solid #b8b8b8
+			border-radius: 18px
+			box-shadow: none
+			&::before
+				content: ""
+
+				position: absolute
+				top: 6px
+				left: 14px
+
+				width: 37px
+				height: 37px
+
+				background-image: url("../img/edit/file.png")
+				background-size: contain
+				background-repeat: no-repeat
+			&.focused .jq-file__name
+				border: none
+			.jq-file__name
+				height: 26px
+				padding: unset
+
+				position: relative
+
+				font-size: 0
+
+				background-color: inherit
+				border: none
+				box-shadow: none
+				&::after
+					content: "Загрузите свою фотографию"
+
+					margin-left: 50px
+
+					font-size: 18px
+					line-height: 18px
+					color: #a2a2a2
+			.jq-file__browse
+				display: none
+		button
+			width: 160px
+			margin-top: auto
+			margin-left: auto
+			padding: 8px 0
+
+			font-size: 18px
+			line-height: 18px
+			font-weight: 400
+			color: #fff
+
+			background-color: #353535
+			border-radius: 5px
+			outline: 0
 // popup-photoalbum
 
 
@@ -282,8 +374,184 @@
 	margin: auto
 	z-index: 110
 	&__inner
-		padding: 15px
+		display: flex
+		flex-wrap: wrap
+		padding: 38px 15px 25px 15px
 
 		background-color: white
+	&__info
+		min-width: 500px
+		p
+			margin-bottom: 36px
+			label
+				padding-bottom: 15px
+
+				font-size: 30px
+				line-height: 30px
+			input
+				width: 100%
+				padding: 5px 5px 5px 10px
+
+				border: 1px solid #b8b8b8
+				border-radius: 18px
+				background-color: #fff
+	&__destination
+		display: flex
+		flex-direction: column
+		margin-top: 20px
+		label
+			padding-bottom: 15px
+
+			font-size: 30px
+			line-height: 30px
+		.jq-selectbox__select
+			width: 100%
+			padding: 6px 25px 0px 14px
+			margin-right: 15px
+			margin-bottom: 20px
+
+			font: unset
+			font-size: 18px
+			line-height: 18px
+			color: #686868
+
+			border: 1px solid #b8b8b8
+			border-radius: 18px
+			background: white
+			box-shadow: none
+		.jq-selectbox__select-text
+			overflow: visible
+		.jq-selectbox__trigger
+			border: none
+		.jq-selectbox__dropdown
+			width: 100%
+
+			top: 30px !important
+			z-index: 100
+
+			font: unset
+			font-size: 18px
+			line-height: 18px
+			color: #686868
+
+			border: 1px solid #b8b8b8
+			border-radius: 18px
+		.jq-selectbox ul
+			padding: 15px 0
+		.jq-selectbox li
+			color: #686868
+			&.selected,
+			&:hover
+				color: white
+				background-color: #353535
+		.jq-selectbox__trigger-arrow
+			display: none
+
+			position: relative
+			&::after
+				content: ""
+
+				position: absolute
+				right: -80px
+				top: -7px
+
+				width: 3px
+				height: 88px
+
+				background: url(../img/doctors/strelka.png)
+				background-size: contain
+				background-repeat: no-repeat
+		.jq-selectbox__trigger
+			width: 18px
+			height: 18px
+
+			top: 11px
+			right: 11px
+
+			background: url(../img/doctors/strelka.png)
+			background-size: contain
+			background-repeat: no-repeat
+
+	&__photo
+		max-width: 680px
+	&__new-field
+		display: flex
+		align-items: center
+		margin-top: 130px
+		img
+			width: 39px
+			height: 39px
+		p
+			margin: 0
+			margin-left: 30px
+			padding: 8px 64px
+			font-size: 30px
+			line-height: 30px
+			font-weight: 400
+			color: #fff
+			background-color: #353535
+			border-radius: 5px
 // popup-complex
+
+
+
+
+// popup-man
+.popup-man
+	position: relative
+	width: 1190px
+	margin: auto
+	z-index: 110
+	.mfp-close
+		display: none
+	&__inner
+		padding: 40px 25px
+
+		position: relative
+
+		background-color: white
+		border-radius: 15px
+		.surveys__image
+			max-width: 100%
+		.surveys__point
+			width: 60px
+			height: 60px
+
+			position: absolute
+
+			cursor: pointer
+
+			background-color: none
+			border: 10px solid #000
+			border-radius: 50%
+			&-ear
+				top: 6%
+				left: 25%
+			&-shoulder
+				top: 24%
+				left: 30%
+			&-cubit
+				top: 29%
+				left: 8%
+			&-brush
+				top: 43%
+			&-basin
+				top: 43%
+				left: 28%
+			&-knee
+				top: 66%
+				left: 17%
+			&-foot
+				top: 89%
+				left: 26%
+			&-neck
+				top: 12%
+				left: 72.3%
+			&-back
+				top: 26%
+				right: 23%
+			&-fawn
+				top: 42%
+				right: 22.7%
+	// popup-man
 
