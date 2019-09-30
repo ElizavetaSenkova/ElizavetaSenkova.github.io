@@ -234,7 +234,7 @@ $(function() {
 	// messages-page
 	window.onload= function() {
 		$('.toggler').on('click', function() { 
-			if (window.opera && opera.toString() == "[object Opera]"){
+			if (navigator.userAgent.search("Opera") >= 0){
 				$(this).parents('.messages__card').siblings().find('.box').css('display', 'none');
 				$(this).parents('.messages__card').find('.box').css('display', 'block');
 				alert('Hello')
