@@ -244,13 +244,12 @@ $(function() {
 
 	// register-open-menu
 	$(".register__list .register__buton").click(function(){
-			$(".register__list .register__buton").parent().parent().parent().removeClass("selected");
-			$(this).parent().parent().parent().addClass("selected");
-			// console.log("q");
-			return false;
+		$(".register__list .register__buton").parent().parent().parent().removeClass("selected");
+		$(this).parent().parent().parent().addClass("selected");
+		// console.log("q");
+		return false;
 	});
 	// register-open-menu
-
 
 
 
