@@ -1,0 +1,107 @@
+.rope
+    &__title
+        padding-top: 40px
+        padding-bottom: 40px
+    &__image
+        width: 100%
+        padding-bottom: 5px
+    &__controls
+        .active
+            border-bottom: 4px solid #9EC400
+        button
+            width: 22%
+            padding-top: 30px
+            padding-bottom: 30px
+
+            font-weight: 500
+            font-size: 16px
+            line-height: 25px
+
+            background-color: inherit
+            border: none
+            &:active, &:focus
+                outline: none
+    &__content-wrap
+        padding-top: 60px
+        padding-bottom: 100px
+
+        background-color: white
+        .active
+            display: block
+    &__general-tab
+        display: none
+    &__text
+        padding-bottom: 40px
+
+        font-size: 15px
+        line-height: 20px
+    &-good
+        width: 305px
+        margin: 0 auto
+
+        background-color: #F6F6F6
+        &:hover 
+            margin-top: -20px
+            padding-top: 20px
+
+            background-color: white
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+
+        &:hover &__img
+	        transform: scale(1.1)
+        &:hover &__buttons
+            display: flex
+
+            position: absolute
+            bottom: -30px
+            z-index: 10
+
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+        &__img
+            width: 100%
+
+            transition: 0.5s
+        &__title
+            padding-top: 50px
+
+            font-weight: normal
+            font-size: 15px
+            line-height: 20px
+            text-align: center
+        &__price
+            margin: 0
+
+            font-weight: 900
+            font-size: 20px
+            line-height: 40px
+            text-align: center
+        &__number
+            margin-top: -5px
+            padding-bottom: 40px
+
+            font-weight: normal
+            font-size: 13px
+            line-height: 20px
+            text-align: center
+            color: #999999
+        &__buttons
+            display: none
+        &__order-btn
+            width: 175px
+            padding-top: 15px
+            padding-bottom: 15px
+
+            text-align: center
+            color: white
+
+            background: #9EC400
+        &__more-btn
+            width: 130px
+            padding-top: 15px
+            padding-bottom: 15px
+
+            text-align: center
+            color: #464747
+
+            border-top: 1px solid #E5E5E5
+            background-color: white

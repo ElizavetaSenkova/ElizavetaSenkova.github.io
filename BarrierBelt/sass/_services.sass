@@ -1,0 +1,252 @@
+.services
+    margin-top: 60px
+    &__title
+        margin: 0
+        margin-bottom: 20px
+
+        font-weight: 900
+        font-size: 48px
+        line-height: 50px
+    &__text
+        margin: 0
+        padding-bottom: 20px
+
+        font-weight: normal
+        font-size: 20px
+        line-height: 30px
+        color: #999999
+    &__card
+        width: 100%
+        height: 290px
+        padding-top: 50px
+        padding-right: 40px
+        padding-left: 40px
+
+        position: relative
+        z-index: 0
+
+        font-weight: 900
+        font-size: 28px
+        line-height: 35px
+        color: white
+
+        background-size: cover
+        &::before
+            content: ""
+
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -1
+
+            width: 100%
+            height: 290px
+
+            background: linear-gradient(180deg, rgba(53, 54, 54, 0.7) 0%, rgba(70, 71, 71, 0) 100%)
+    &__card--build
+        background-image: url("../img/services/build.jpg")
+    &__card--branding
+        background-image: url("../img/services/branding.jpg")
+    &__card--revision
+        background-image: url("../img/services/revision.jpg")
+    &__card--painting
+        background-image: url("../img/services/painting.jpg")
+    &__card--custom
+        background-image: url("../img/services/custom.jpg")
+    &__card--street
+        background-image: url("../img/services/street.jpg")
+    &__card--wall
+        background-image: url("../img/services/wall.jpg")
+    &__card--manufacturing
+        background-image: url("../img/services/manufacturing.jpg")
+    &__card--coils
+        background-image: url("../img/services/coils.jpg")
+    &__more
+        width: 100%
+        height: 290px
+        padding: 0 35px
+
+        background-color: white
+        box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05)
+    &__spectrum
+        padding-top: 50px
+        padding-bottom: 20px
+
+        font-weight: bold
+        font-size: 28px
+        line-height: 35px
+        color: #464747
+    &__button
+        display: block
+        padding: 20px 0
+
+        font-weight: normal
+        font-size: 16px
+        line-height: 25px
+        text-align: center
+        color: white
+
+        background: #9EC400
+        &:hover
+            color: white
+
+            text-decoration: none
+    
+    &-painting
+        margin-top: 30px
+        margin-bottom: 150px
+        &__wrap
+            padding: 60px 30px 60px 30px
+
+            background-color: white
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+        &__img
+            width: 440px
+            height: 320px
+        &__tabs
+            display: flex
+            margin: 0
+            padding: 0
+
+            position: relative
+
+            list-style: none
+            li
+                width: 25px
+                height: 5px
+                margin-top: 18px
+                margin-right: 5px
+
+                background-color: #C4C4C4
+                button
+                    width: 25px
+                    height: 5px
+                    
+                    position: absolute
+
+                    font-size: 0
+
+                    background-color: #C4C4C4
+        .slick-dots
+            display: flex
+            justify-content: center
+            padding: 0
+        .slick-active
+            button
+                background-color: $green-main
+        &__title
+            padding-top: 36px
+            padding-bottom: 20px
+
+            font-weight: 900
+            font-size: 48px
+            line-height: 50px
+        &__text
+            padding-bottom: 80px
+
+            font-weight: normal
+            font-size: 16px
+            line-height: 25px
+        &__btns
+            display: flex
+            justify-content: space-around
+            button
+                position: relative
+
+                background-color: white
+                border: none
+        &__prev
+            color: #BDBDBD
+            &::before
+                content: ""
+
+                position: absolute
+                top: 8px
+                left: -14px
+
+                width: 8px
+                height: 14px
+
+                background-image: url("../img/services/icon/prev.svg")
+        &__next
+            &::before
+                content: ""
+
+                position: absolute
+                top: 8px
+                right: -14px
+
+                width: 8px
+                height: 14px
+
+                background-image: url("../img/services/icon/next.svg")
+
+    &-customers
+        margin-bottom: 100px
+        &__text
+            padding-top: 30px
+            padding-bottom: 50px
+
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+
+            color: #999999
+        &__images
+            position: relative
+            &::before
+                content: ""
+
+                position: absolute
+                top: 40px
+                left: -78px
+                z-index: 1
+
+                width: 12px
+                height: 22px
+
+                background-image: url("../img/services/icon/prev-2.svg")
+            &::after
+                content: ""
+
+                position: absolute
+                top: 40px
+                right: -78px
+                z-index: 1
+
+                width: 12px
+                height: 22px
+
+                background-image: url("../img/services/icon/next-2.svg")
+            button
+                width: 60px
+                height: 60px
+
+                position: absolute
+
+                background-color: #F6F6F6
+                border: 1px solid #E5E5E5
+        &__images
+            width: 1280px
+            margin: 0 auto
+        &__list
+            display: flex
+            justify-content: space-around
+            align-items: center
+
+            list-style: none
+            
+        &__prev
+            top: 20px
+            left: -100px
+        &__next
+            top: 20px
+            right: -100px
+        
+
+        
+        
+
+
+
+    
