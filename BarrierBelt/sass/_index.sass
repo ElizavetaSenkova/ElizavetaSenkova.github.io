@@ -189,7 +189,8 @@
         .show
             display: block
         &__filter-btn
-            padding: 0 15px
+            margin: 0 15px
+            padding: 0
 
             font-weight: normal
             font-size: 16px
@@ -197,12 +198,13 @@
             color: #999999
 
             border: none
-            border-bottom: 1px dashed
+            // border-bottom: 1px dashed
             background-color: white
             &.active
                 color: inherit
 
-                border-bottom: none
+                border-bottom: 4px solid #9ec400
+                outline: none
         &__content-wrap
             padding-top: 60px
             padding-bottom: 100px
@@ -598,19 +600,63 @@
             display: flex
             flex-wrap: wrap
             padding-bottom: 30px
+        .slick-arrow
+            width: 60px
+            height: 60px
+
+            position: absolute
+            top: 120px
+            z-index: 10
+
+            font-size: 0
+
+            background-color: #f6f6f6
+            border: 1px solid #e5e5e5
+        .slick-prev
+            left: -26px
+            &::before
+                content: ""
+
+                position: absolute
+                top: 18px
+                left: 21px
+                z-index: 1
+
+                width: 12px
+                height: 22px
+
+                background-image: url(../img/services/icon/prev-2.svg)
+        .slick-next
+            right: -26px
+            &::before
+                content: ""
+
+                position: absolute
+                top: 18px
+                left: 23px
+                z-index: 1
+
+                width: 12px
+                height: 22px
+
+                transform: rotate(180deg)
+
+                background-image: url(../img/services/icon/prev-2.svg)
         .slick-slide
             width: 400px
             margin-right: 25px
         &__item
             min-width: 400px
             height: 560px
-            &:hover
-                box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
+            // &:hover
+            //     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1)
                 .index-news__item-name
                     color: #9EC400
         &__link-general
             &:hover
                 text-decoration: none
+            &:active
+                outline: none
         &__image
             width: 100%
         &__date,

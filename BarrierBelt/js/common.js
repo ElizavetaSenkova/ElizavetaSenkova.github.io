@@ -446,7 +446,6 @@ $(".index-news__list").slick({
 				slidesToShow: 2,
 				slidesToScroll: 1,
 				rows: 1,
-				arrows: false,
 			}
 		},
 		{
