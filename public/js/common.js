@@ -1,8 +1,5 @@
 $(function() {
 
-	$(".start-middle__two").fadeIn(1100);
-	$(".start-middle__one").fadeIn(1900);
-
 	// page-header
 	$(".page-header__nav button").click(function(){
 		$(this).toggleClass("selected");
