@@ -1,0 +1,250 @@
+.page-header
+	display: flex
+	flex-direction: column
+	// height: 100%
+	// overflow-y: hidden
+	// overflow-x: hidden
+
+	position: sticky
+	top: 0
+	// bottom: 0
+	// left: 0
+	// z-index: 100
+
+	width: 255px
+	max-width: 100%
+	&.topchik
+		height: unset
+
+		position: sticky
+		// left: 174px
+		top: 0
+		z-index: 1
+	&__wrapper
+		display: flex
+		flex-direction: column
+		height: 100vh
+	&__logo
+		display: block
+		margin-bottom: 30px
+		margin-top: 30px
+
+		text-align: center
+		color: #333333
+		font-size: 40px
+		img
+			width: 150px
+			height: 55px
+	&__nav
+		height: 100%
+		margin: 0
+		padding-top: 20px
+		padding-bottom: 20px
+		padding: 0
+
+		overflow-y: scroll
+		overflow-x: hidden
+
+		font-size: 14px
+		line-height: 24px
+		font-weight: 500
+		text-transform: uppercase
+		list-style: none
+
+		-ms-overflow-style: none
+		scrollbar-width: none
+		&::-webkit-scrollbar
+			width: 0
+			background: transparent
+	&__nav-item
+		position: relative
+	&__nav-link
+		display: block
+		padding-top: 10px
+		padding-bottom: 10px
+		padding-right: 60px
+		transition: .3s
+		color: #666
+
+		font-size: 16px
+		line-height: 22px
+		text-transform: uppercase
+		font-weight: 400
+
+		border-bottom: 2px solid $grey
+		&:hover
+			color: $blue
+			text-decoration: none
+		&.active
+			padding-bottom: 0
+			color: $blue
+			border-bottom: none
+	&__nav-btn
+		position: absolute
+		right: 4px
+		top: 8px
+		background-color: inherit
+		border: none
+		&:active,
+		&:focus
+			outline: none
+		i
+			color: #666
+		// services-open
+		&.selected
+			i
+				transform: rotate(270deg)
+			+ .page-header__services-list
+				display: block
+			.page-header__nav-link
+				color: $blue
+		// services-open
+
+	&__services-list
+		display: none
+		margin: 0
+		margin-top: 20px
+		padding-bottom: 20px
+		padding-left: 0
+
+		font-size: 12px
+		line-height: 25px
+
+		list-style: none
+
+		border-bottom: 2px solid $grey
+		&-zero
+			margin-bottom: 5px
+
+			border-left: 1px solid white
+	&__services-item
+		padding-bottom: 15px
+
+		position: relative
+
+		line-height: 20px
+		&:last-child
+			padding-bottom: 0
+		.page-header__nav-btn
+			top: 0
+			right: 26px
+	&__item-zero
+		padding-bottom: 0
+	&__services-link
+		display: block
+		width: 220px
+
+		color: #666
+		&:hover
+			text-decoration: none
+	&__info
+		display: flex
+		justify-content: space-around
+		align-items: center
+		padding-top: 10px
+		padding-bottom: 20px
+
+		border-bottom: 2px solid white
+		&-search
+			color: white 
+			i
+				font-size: 28px
+		&-lang
+			display: flex
+			flex-direction: column
+			a
+				border-bottom: 2px solid white
+				text-decoration: none
+				font-weight: bold
+				line-height: 18px
+				color: white
+			span
+				color: white
+				font-weight: bold
+				line-height: 27px
+				opacity: 0.5
+		&-pdf
+			color: white
+			font-weight: bold
+			line-height: 18px
+			i
+				font-size: 28px
+	&__arrows-wrap
+		display: flex
+		justify-content: space-around
+		margin-top: auto
+		padding: 30px 0
+
+		border-top: 2px solid white
+	&__arrows
+		display: flex
+		align-items: center
+		justify-content: center
+		width: 49px
+		height: 49px
+
+		border-radius: 57%
+		border: 1px solid $grey
+
+		cursor: pointer
+		i
+			font-size: 30px
+			color: white
+		&-top
+			transform: rotate(90deg)
+		&-next
+			transform: rotate(180deg)
+
+// mobile-panel
+.top-panel
+  width: 100%
+  height: 50px
+  display: none
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 103
+
+  background-color: $blue
+  border-bottom: 1px solid white
+  .menu-toggle
+    padding-bottom: 20px
+    font-size: 16px
+    --width : 2em
+    position: absolute
+    cursor: pointer
+    .box
+      display: inline-block
+      vertical-align: bottom
+
+      padding-top: 16px
+      padding-left: 24px
+    &.burger
+      &.m0
+        margin-left: 256px 
+      .rect
+        width: var(--width)
+        height: calc(var(--width) / 8)
+        background-color: white
+        margin-bottom: calc(var(--width) / 8 )
+        transition: 0.2s
+      .rect:last-of-type 
+        margin: 0
+      &.close 
+        .rect-top 
+          transform: translateY(calc(var(--width)/8*2)) rotate(45deg)
+        .rect-bottom 
+          transform: translateY(calc(var(--width)/8*2*-1)) rotate(-45deg)
+        .rect-middle 
+          opacity: 0
+// mobile-panel
+
+
+
+
+
+
+
+
+
+
