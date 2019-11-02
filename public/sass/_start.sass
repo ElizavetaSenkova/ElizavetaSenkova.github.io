@@ -13,6 +13,8 @@
       max-width: 237px
     .page-title__actions
       position: static
+    .page-title__info-lang a
+      border-bottom: 3px solid $red !important
 
   &-middle
     position: relative
@@ -24,6 +26,8 @@
       left: 54px
     &__two
       max-width: 100%
+    .animated
+      animation-timing-function: ease-in
 
   &-bottom
     padding-bottom: 40px
@@ -39,11 +43,14 @@
       &__item
         text-align: center
         a
-          &:hover
+          &:hover 
             text-decoration: none
+            p
+              color: #000
           p
             margin-top: 25px
 
+            font-family: $default-font
             font-size: 18px
             line-height: 18px
             color: #666

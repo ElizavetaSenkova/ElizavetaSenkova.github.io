@@ -1,11 +1,3 @@
-// @font-face
-// 	font-family: "dinprolight"
-// 	src: url(DINPro-Light.eot?) format("eot"),
-// 			url(DINPro-Light.woff) format("woff"), 
-// 			url(DINPro-Light.ttf) format("truetype"),
-// 	font-weight: 300
-// 	font-style: normal
-	
 @import "vars"
 @import "fonts"
 @import "libs"
@@ -42,17 +34,15 @@ body
 	font-size: 30px
 	line-height: 40px
 	font-weight: 400
-	color: $blue
 
 .content__title-bold
 	font-size: 15px
 	line-height: 18px
 	font-weight: 800
 	text-transform: uppercase
-	color: $blue
 
 p
-	// font-family: "dinprolight", sans-serif
+	font-family: "dinpro-light", sans-serif
 	font-size: 17px
 	line-height: 20px
 	color: black
@@ -60,11 +50,15 @@ p
 .mb-40
 	margin-bottom: 40px
 
+.pb-20
+	padding-bottom: 20px
+
 .block-line
 	display: flex
 	p
 		width: 60%
 
+		font-family: $default-font
 		font-size: 17px
 		line-height: 20px
 		font-weight: 800
@@ -88,34 +82,27 @@ p
 		th,
 		td
 			padding: 15px 0
-		th.green
-			border-bottom: 3px solid $green !important
+		th.color
 			border-right: 6px solid white
 		td.padding-left
 			padding-left: 10px
-		th.green-top
+		th.color-top
 			text-align: center
-			border-top: 3px solid $green
-			border-right: 3px solid $green
-			border-left: 3px solid $green
-		td.green-all
+		td.color-all
 			text-align: center
-			border-right: 3px solid $green
-			border-left: 3px solid $green
-		td.green-bottom
+		td.color-bottom
 			text-align: center
-			border-bottom: 3px solid $green !important
 	
 	tr.title
 		th
-			border-bottom: 3px solid $grey
+			border-bottom: 2px solid $grey
 	tr.grey-bottom
 		td
-			border-bottom: 3px solid $grey
+			border-bottom: 2px solid $grey
 		.border-right
 			border-right: 6px solid white
 		th
-			border-bottom: 3px solid $grey
+			border-bottom: 2px solid $grey
 
 .numbers
 	padding: 10px 52px
@@ -125,21 +112,22 @@ p
 	&__num
 		margin-top: -48px
 
+		font-family: "dinpro-medium"
 		font-size: 68px
 		line-height: 80px
-		color: $red
 		text-align: center
 
 		background-color: white
 	&__title
+		font-family: "dinpro-medium"
 		font-size: 20px
 		line-height: 24px
-		color: $red
 		text-align: center
 	&__text
 		padding: 10px 0
 
 		font-size: 14px
+		font-weight: 800
 		line-height: 17px
 		color: #666
 	&__note
@@ -159,18 +147,74 @@ p
 	background-color: $grey
 
 .citation
-	padding: 15px 0
+	padding: 25px 0
 
 	position: relative
-
-	border-top: 2px solid $red
-	border-bottom: 2px solid $red
 	p
+		margin: 0
+
 		font-family: $italy-font
 		font-size: 24px
 		line-height: 30px
 		color: #666
-	
+	img
+		max-width: 47px
+
+		position: absolute
+		top: -28px
+
+		background-color: #fff
+		border-right: 7px solid white
+	&-photo
+		max-width: 100%
+
+.list
+	.block-line
+		padding: 40px 0
+
+		position: relative
+		&::before
+			content: ''
+
+			position: absolute
+			top: -8px
+			left: 0
+
+			width: 113px
+			height: 100px
+
+			background-image: url("../img/headphones.svg")
+	.block-line p
+		width: 100%
+		margin: 0
+		padding-left: 130px
+	.block-line div
+		width: 10%
+	&-ul
+		margin: 0
+		padding: 20px 0
+
+		list-style: none
+		li
+			padding-bottom: 15px
+			padding-left: 20px
+
+			position: relative
+
+			font-size: 17px
+			line-height: 20px
+			&::before
+				content: ''
+
+				position: absolute
+				top: 7px
+				left: 3px
+
+				width: 8px
+				height: 8px
+
+				background-color: #666
+				
 .img-responsive
 	display: block
 	max-width: 100%
@@ -183,6 +227,148 @@ p
 
 b, strong
 	font-weight: bold
+
+// colors
+.blue
+	.top-panel
+		background-color: $blue
+	.page-title__wrapper 
+		h1
+			color: $blue
+	.page-title__info-lang
+		a
+			border-bottom: 2px solid $blue
+	.page-header__nav-link,
+	.page-header__services-link
+		&:hover,
+		&.active
+			color: $blue
+	.content__title2,
+	.content__title-bold
+		color: $blue
+	.table-main tr th.color
+		border-bottom: 2px solid $blue !important
+	.table-main tr th.color-top
+		border-top: 2px solid $blue
+		border-right: 2px solid $blue
+		border-left: 2px solid $blue
+	.table-main tr td.color-all
+		border-right: 2px solid $blue
+		border-left: 2px solid $blue
+	.table-main tr td.color-bottom
+		border-bottom: 2px solid $blue
+	.numbers__num,
+	.numbers__title
+		color: $blue
+	.citation
+		border-top: 2px solid $blue
+		border-bottom: 2px solid $blue
+
+.red
+	.top-panel
+		background-color: $red
+	.page-title__wrapper 
+		h1
+			color: $red
+	.page-title__info-lang
+		a
+			border-bottom: 2px solid $red
+	.page-header__nav-link,
+	.page-header__services-link
+		&:hover,
+		&.active
+			color: $red
+	.content__title2,
+	.content__title-bold
+		color: $red
+	.table-main tr th.color
+		border-bottom: 2px solid $red !important
+	.table-main tr th.color-top
+		border-top: 2px solid $red
+		border-right: 2px solid $red
+		border-left: 2px solid $red
+	.table-main tr td.color-all
+		border-right: 2px solid $red
+		border-left: 2px solid $red
+	.table-main tr td.color-bottom
+		border-bottom: 2px solid $red
+	.numbers__num,
+	.numbers__title
+		color: $red
+	.citation
+		border-top: 2px solid $red
+		border-bottom: 2px solid $red
+
+.violet
+	.top-panel
+		background-color: $violet
+	.page-title__wrapper 
+		h1
+			color: $violet
+	.page-title__info-lang
+		a
+			border-bottom: 2px solid $violet
+	.page-header__nav-link,
+	.page-header__services-link
+		&:hover,
+		&.active
+			color: $violet
+	.content__title2,
+	.content__title-bold
+		color: $violet
+	.table-main tr th.color
+		border-bottom: 2px solid $violet !important
+	.table-main tr th.color-top
+		border-top: 2px solid $violet
+		border-right: 2px solid $violet
+		border-left: 2px solid $violet
+	.table-main tr td.color-all
+		border-right: 2px solid $violet
+		border-left: 2px solid $violet
+	.table-main tr td.color-bottom
+		border-bottom: 2px solid $violet
+	.numbers__num,
+	.numbers__title
+		color: $violet
+	.citation
+		border-top: 2px solid $violet
+		border-bottom: 2px solid $violet		
+
+.green
+	.top-panel
+		background-color: $green
+	.page-title__wrapper 
+		h1
+			color: $green
+	.page-title__info-lang
+		a
+			border-bottom: 2px solid $green
+	.page-header__nav-link,
+	.page-header__services-link
+		&:hover,
+		&.active
+			color: $green
+	.content__title2,
+	.content__title-bold
+		color: $green
+	.table-main tr th.color
+		border-bottom: 2px solid $green !important
+	.table-main tr th.color-top
+		border-top: 2px solid $green
+		border-right: 2px solid $green
+		border-left: 2px solid $green
+	.table-main tr td.color-all
+		border-right: 2px solid $green
+		border-left: 2px solid $green
+	.table-main tr td.color-bottom
+		border-bottom: 2px solid $green
+	.numbers__num,
+	.numbers__title
+		color: $green
+	.citation
+		border-top: 2px solid $green
+		border-bottom: 2px solid $green
+// colors
 
 
 
