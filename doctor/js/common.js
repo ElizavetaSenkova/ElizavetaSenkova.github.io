@@ -212,22 +212,24 @@ $(function() {
 
 
 	//  page-more-img
-	 $(document).ready(function() {
-		$('.popup-gallery').magnificPopup({
-			delegate: 'a',
-			type: 'image',
-			tLoading: 'Loading image #%curr%...',
-			mainClass: 'mfp-img-mobile',
-			gallery: {
-				enabled: true,
-				navigateByImgClick: true,
-				preload: [0,1] // Will preload 0 - before current, and 1 after the current image
-			},
-			image: {
-				tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
-			}
-		});
-	});
+
+		$("#lightgallery").lightGallery(); 
+
+		// $('.popup-gallery').magnificPopup({
+		// 	delegate: 'a',
+		// 	type: 'image',
+		// 	tLoading: 'Loading image #%curr%...',
+		// 	mainClass: 'mfp-img-mobile',
+		// 	gallery: {
+		// 		enabled: true,
+		// 		navigateByImgClick: true,
+		// 		preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		// 	},
+		// 	image: {
+		// 		tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+		// 	}
+		// });
+
 	//  page-more-img
 
 
@@ -243,11 +245,17 @@ $(function() {
 
 
 	// register-open-menu
+
 	$(".register__list .register__buton").click(function(){
 		$(".register__list .register__buton").parent().parent().parent().removeClass("selected");
 		$(this).parent().parent().parent().addClass("selected");
 		// console.log("q");
 		return false;
+	});
+
+	$(".register__item .register__change").click(function() {
+		$(this).parent().parent().parent().find('.register__more-list li').attr("href", "#complex_form");
+		$(this).parent().parent().parent().find('.register__more-list li').css("cursor", "pointer");
 	});
 	// register-open-menu
 
@@ -293,5 +301,43 @@ if (detectIE()){
     })
 }
 	// menu-IE
+
+
+	// diagnosis
+	var substringMatcher = function(strs) {
+		return function findMatches(q, cb) {
+			var matches, substringRegex;
+	
+			// an array that will be populated with substring matches
+			matches = [];
+	
+			// regex used to determine if a string contains the substring `q`
+			substrRegex = new RegExp(q, 'i');
+	
+			// iterate through the pool of strings and for any string that
+			// contains the substring `q`, add it to the `matches` array
+			$.each(strs, function(i, str) {
+				if (substrRegex.test(str)) {
+					matches.push(str);
+				}
+			});
+	
+			cb(matches);
+		};
+	};
+	
+	var states = ['Повреждение голеностопного сустава', 'Повреждение ахиллова сухожилия',
+		'Повреждение связок голеностопного сустава', 'Пяточная шпора'];
+	
+	$('#the-basics .typeahead').typeahead({
+		hint: true,
+		highlight: true,
+		minLength: 1
+	},
+	{
+		name: 'states',
+		source: substringMatcher(states)
+	});
+	// diagnosis
 
 });
