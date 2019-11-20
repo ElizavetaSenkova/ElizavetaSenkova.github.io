@@ -1,0 +1,415 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+@import "page-header"
+@import "page-title"
+@import "start"
+
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $text
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.content__title2
+	font-size: 30px
+	line-height: 40px
+	font-weight: 400
+
+.content__title-bold
+	font-size: 15px
+	line-height: 18px
+	font-weight: 800
+	text-transform: uppercase
+
+p
+	font-family: "dinpro-light", sans-serif
+	font-size: 17px
+	line-height: 20px
+	color: black
+
+.mb-40
+	margin-bottom: 40px
+
+.pb-20
+	padding-bottom: 20px
+
+.block-line
+	display: flex
+	p
+		width: 60%
+
+		font-family: $default-font
+		font-size: 17px
+		line-height: 20px
+		font-weight: 800
+		color: rgb(77, 77, 77)
+	div
+		width: 40%
+		height: 2px
+		margin-top: 12px
+
+		background-color: $grey
+
+.table-main
+	width: 100%
+
+	font-size: 17px
+	line-height: 20px
+	tr
+		th
+			font-weight: 800
+			color: rgb(77, 77, 77)
+		th,
+		td
+			padding: 15px 0
+		th.color
+			border-right: 6px solid white
+		td.padding-left
+			padding-left: 10px
+		th.color-top
+			text-align: center
+		td.color-all
+			text-align: center
+		td.color-bottom
+			text-align: center
+	
+	tr.title
+		th
+			border-bottom: 2px solid $grey
+	tr.grey-bottom
+		td
+			border-bottom: 2px solid $grey
+		.border-right
+			border-right: 6px solid white
+		th
+			border-bottom: 2px solid $grey
+
+.numbers
+	padding: 10px 52px
+
+	border: 2px solid $grey
+	border-radius: 10px
+	&__num
+		margin-top: -48px
+
+		font-family: "dinpro-medium"
+		font-size: 68px
+		line-height: 80px
+		text-align: center
+
+		background-color: white
+	&__title
+		font-family: "dinpro-medium"
+		font-size: 20px
+		line-height: 24px
+		text-align: center
+	&__text
+		padding: 10px 0
+
+		font-size: 14px
+		font-weight: 800
+		line-height: 17px
+		color: #666
+	&__note
+		padding-top: 10px
+
+		font-family: $italy-font
+		font-size: 11px
+		line-height: 17px
+		color: #666
+
+		border-top: 1px solid $grey
+
+.grey-line
+	width: 100%
+	height: 2px
+
+	background-color: $grey
+
+.citation
+	padding: 25px 0
+
+	position: relative
+	p
+		margin: 0
+
+		font-family: $italy-font
+		font-size: 24px
+		line-height: 30px
+		color: #666
+	img
+		max-width: 47px
+
+		position: absolute
+		top: -28px
+
+		background-color: #fff
+		border-right: 7px solid white
+	&-photo
+		max-width: 100%
+
+.list
+	.block-line
+		padding: 40px 0
+
+		position: relative
+		&::before
+			content: ''
+
+			position: absolute
+			top: -8px
+			left: 0
+
+			width: 113px
+			height: 100px
+
+			background-image: url("../img/headphones.svg")
+	.block-line p
+		width: 100%
+		margin: 0
+		padding-left: 130px
+	.block-line div
+		width: 10%
+	&-ul
+		margin: 0
+		padding: 20px 0
+
+		list-style: none
+		li
+			padding-bottom: 15px
+			padding-left: 20px
+
+			position: relative
+
+			font-size: 17px
+			line-height: 20px
+			&::before
+				content: ''
+
+				position: absolute
+				top: 7px
+				left: 3px
+
+				width: 8px
+				height: 8px
+
+				background-color: #666
+
+.list-add
+  &__title
+    display: flex
+    align-items: center
+    margin-bottom: 20px
+    h2
+      margin: 0
+      padding-left: 15px
+
+      font-size: 27px
+      line-height: 27px
+      font-weight: 800
+  &__ul
+    margin: 0
+    padding: 0
+
+    list-style: none
+    li
+      padding-bottom: 15px
+      padding-left: 20px
+
+      position: relative
+
+      font-family: "dinpro-medium", sans-serif
+      font-size: 17px
+      line-height: 20px
+      &::before
+        content: ''
+
+        position: absolute
+        top: 6px
+        left: 3px
+
+        width: 10px
+        height: 10px
+
+        background-color: #fff
+        border: 1px solid #666
+        border-radius: 5px
+        
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+// colors
+.blue
+	.top-panel
+		background-color: $blue
+	.page-title__wrapper 
+		h1
+			color: $blue
+	.page-title__info-lang
+		a
+			border-bottom: 2px solid $blue
+	.page-header__nav-link,
+	.page-header__services-link
+		&:hover,
+		&.active
+			color: $blue
+	.content__title2,
+	.content__title-bold
+		color: $blue
+	.table-main tr th.color
+		border-bottom: 2px solid $blue !important
+	.table-main tr th.color-top
+		border-top: 2px solid $blue
+		border-right: 2px solid $blue
+		border-left: 2px solid $blue
+	.table-main tr td.color-all
+		border-right: 2px solid $blue
+		border-left: 2px solid $blue
+	.table-main tr td.color-bottom
+		border-bottom: 2px solid $blue
+	.numbers__num,
+	.numbers__title
+		color: $blue
+	.citation
+		border-top: 2px solid $blue
+		border-bottom: 2px solid $blue
+
+.red
+	.top-panel
+		background-color: $red
+	.page-title__wrapper 
+		h1
+			color: $red
+	.page-title__info-lang
+		a
+			border-bottom: 2px solid $red
+	.page-header__nav-link,
+	.page-header__services-link
+		&:hover,
+		&.active
+			color: $red
+	.content__title2,
+	.content__title-bold
+		color: $red
+	.table-main tr th.color
+		border-bottom: 2px solid $red !important
+	.table-main tr th.color-top
+		border-top: 2px solid $red
+		border-right: 2px solid $red
+		border-left: 2px solid $red
+	.table-main tr td.color-all
+		border-right: 2px solid $red
+		border-left: 2px solid $red
+	.table-main tr td.color-bottom
+		border-bottom: 2px solid $red
+	.numbers__num,
+	.numbers__title
+		color: $red
+	.citation
+		border-top: 2px solid $red
+		border-bottom: 2px solid $red
+
+.violet
+	.top-panel
+		background-color: $violet
+	.page-title__wrapper 
+		h1
+			color: $violet
+	.page-title__info-lang
+		a
+			border-bottom: 2px solid $violet
+	.page-header__nav-link,
+	.page-header__services-link
+		&:hover,
+		&.active
+			color: $violet
+	.content__title2,
+	.content__title-bold
+		color: $violet
+	.table-main tr th.color
+		border-bottom: 2px solid $violet !important
+	.table-main tr th.color-top
+		border-top: 2px solid $violet
+		border-right: 2px solid $violet
+		border-left: 2px solid $violet
+	.table-main tr td.color-all
+		border-right: 2px solid $violet
+		border-left: 2px solid $violet
+	.table-main tr td.color-bottom
+		border-bottom: 2px solid $violet
+	.numbers__num,
+	.numbers__title
+		color: $violet
+	.citation
+		border-top: 2px solid $violet
+		border-bottom: 2px solid $violet		
+
+.green
+	.top-panel
+		background-color: $green
+	.page-title__wrapper 
+		h1
+			color: $green
+	.page-title__info-lang
+		a
+			border-bottom: 2px solid $green
+	.page-header__nav-link,
+	.page-header__services-link
+		&:hover,
+		&.active
+			color: $green
+	.content__title2,
+	.content__title-bold
+		color: $green
+	.table-main tr th.color
+		border-bottom: 2px solid $green !important
+	.table-main tr th.color-top
+		border-top: 2px solid $green
+		border-right: 2px solid $green
+		border-left: 2px solid $green
+	.table-main tr td.color-all
+		border-right: 2px solid $green
+		border-left: 2px solid $green
+	.table-main tr td.color-bottom
+		border-bottom: 2px solid $green
+	.numbers__num,
+	.numbers__title
+		color: $green
+	.citation
+		border-top: 2px solid $green
+		border-bottom: 2px solid $green
+// colors
+
+
+
+@import "media" // Always at the end

@@ -1,0 +1,120 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+  .start-middle__one
+    max-width: 380px
+  .start-bottom .title__big
+    font-size: 90px
+    line-height: 100px
+
+// ≥992px
++media-breakpoint-down(md)
+  .page-header
+    display: none
+
+    height: 100%
+    padding-top: 90px
+
+    overflow: scroll
+
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 100
+
+    background-color: white
+  .page-header__nav-link
+    padding-left: 20px
+  .page-header__services-link
+    padding-left: 25px
+  .page-title__wrapper h1
+    font-size: 42px
+    line-height: 46px
+  .page-title__image
+    max-width: 330px
+  
+  .top-panel
+    display: block
+
+  .page-title
+    margin-top: 50px
+
+  .overlay
+    background: #000
+    height: 100%
+    opacity: 0.5
+    position: fixed
+    width: 100%
+    z-index: 100
+    top: 0
+    left: 0
+    display: none
+
+  .start
+    margin-top: 50px
+    .title
+      text-align: center
+  .start-middle__one
+    max-width: 280px
+    top: 80px
+  .start-bottom .title__big
+    font-size: 66px
+  .start-bottom .icons__list
+    margin-top: 80px
+
+// ≥768px
++media-breakpoint-down(sm)
+  .page-title__wrapper
+    flex-wrap: wrap
+
+  .start-middle__one
+    max-width: 190px
+
+  .table-main
+    width: 689px
+
+  .table-main__wrap
+    display: block
+    overflow-x: auto
+    white-space: nowrap
+
+  .numbers__num
+    font-size: 50px
+
+  .block-line div
+    display: none
+  
+  .block-line p
+    width: 100%
+
+// ≥576px
++media-breakpoint-down(xs)
+  .start-bottom .icons__list
+    margin-top: 150px
+
+  .page-title__image
+    max-width: 290px
+
+  .start-top img
+    max-width: 180px
+
+
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
