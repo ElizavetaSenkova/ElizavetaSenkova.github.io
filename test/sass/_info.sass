@@ -66,6 +66,7 @@
 			color: $pink
 			letter-spacing: 8px
 			font-weight: bold
+			word-break: break-word
 			&:hover
 				text-decoration: none
 	&-sub
@@ -93,7 +94,34 @@
 				width: 300px
 				padding: 5px 0 5px 5px
 
+				font-size: 20px
+				letter-spacing: 3px
+
 				border: 1px solid $border
+				&::-webkit-input-placeholder 
+					color: $border
+					font-size: 20px
+					line-height: 20px
+					text-transform: uppercase
+					letter-spacing: 3px
+				&::-moz-placeholder 
+					color: $border
+					font-size: 20px
+					line-height: 20px
+					text-transform: uppercase
+					letter-spacing: 3px
+				&:-moz-placeholder 
+					color: $border
+					font-size: 20px
+					line-height: 20px
+					text-transform: uppercase
+					letter-spacing: 3px
+				&:-ms-input-placeholder  
+					color: $border
+					font-size: 20px
+					line-height: 20px
+					text-transform: uppercase
+					letter-spacing: 3px
 			button
 				width: 36px
 

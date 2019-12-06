@@ -46,16 +46,22 @@
 	&-second
 		padding-top: 60px
 		.promo-reg a
-			width: 454px
+			max-width: 454px
 		.promo-reg h1
 			text-align: left
+			word-break: break-word
 
 			background: url(../img/promo/02.png) no-repeat 0 4px
 			background-position: left center
 			background-size: contain
 	&-img
-		margin-top: 75px
+		display: flex
+		align-items: center
+		height: 100%
+		padding-right: 40px
 		img
 			max-width: 100%
 	.promo-reg__second
-		border-right: 1px solid $border
+		padding-right: 50px
+		&-line
+			border-right: 1px solid $border

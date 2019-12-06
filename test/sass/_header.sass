@@ -13,8 +13,26 @@
 				width: 250px
 				padding: 3px 0 3px 45px
 
+				font-size: 20px
+
 				background: url(../img/search.png) no-repeat scroll 5px 4px
 				border: none
+				&::-webkit-input-placeholder 
+					color: #474545
+					font-size: 20px
+					line-height: 20px
+				&::-moz-placeholder 
+					color: #474545
+					font-size: 20px
+					line-height: 20px
+				&:-moz-placeholder 
+					color: #474545
+					font-size: 20px
+					line-height: 20px
+				&:-ms-input-placeholder  
+					color: #474545
+					font-size: 20px
+					line-height: 20px
 		&__user
 			display: flex
 			align-items: center
@@ -45,3 +63,36 @@
 					color: $menu
 					&:hover
 						text-decoration: none
+
+	&-mobile
+		display: none
+		&__wrapper
+			.menu-toggle
+				font-size: 16px
+				--width : 2em
+				position: static
+				cursor: pointer
+				.box
+					display: inline-block
+					vertical-align: bottom
+				&.burger
+					&.m0
+						margin-left: 256px 
+					.rect
+						width: var(--width)
+						height: calc(var(--width) / 8)
+						background-color: white
+						margin-bottom: calc(var(--width) / 8 )
+						transition: 0.2s
+					.rect:last-of-type 
+						margin: 0
+					&.close 
+						.rect-top 
+							transform: translateY(calc(var(--width)/8*2)) rotate(45deg)
+						.rect-bottom 
+							transform: translateY(calc(var(--width)/8*2*-1)) rotate(-45deg)
+						.rect-middle 
+							opacity: 0
+			&__logo
+				img
+					max-width: 100%
