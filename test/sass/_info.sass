@@ -69,6 +69,9 @@
 			word-break: break-word
 			&:hover
 				text-decoration: none
+				color: $violet
+			&:active
+				opacity: 0.3
 	&-sub
 		padding: 0 50px
 		&__title
@@ -98,6 +101,7 @@
 				letter-spacing: 3px
 
 				border: 1px solid $border
+				cursor: pointer
 				&::-webkit-input-placeholder 
 					color: $border
 					font-size: 20px
@@ -122,6 +126,9 @@
 					line-height: 20px
 					text-transform: uppercase
 					letter-spacing: 3px
+				&:hover
+					text-decoration: none
+					border: 1px solid $pink
 			button
 				width: 36px
 
@@ -130,6 +137,14 @@
 				color: white
 
 				background-color: $violet
+				cursor: pointer
+				&:hover
+					text-decoration: none
+					color: white
+					background-color: $pink
+				&:active
+					opacity: 0.3
+					outline: none
 		&__agree
 			font-family: $text-font
 			font-size: 12px

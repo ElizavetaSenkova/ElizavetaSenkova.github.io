@@ -9,6 +9,7 @@
 			padding-top: 45px
 			padding-bottom: 60px
 		&__search
+			cursor: pointer
 			input
 				width: 250px
 				padding: 3px 0 3px 45px
@@ -17,6 +18,7 @@
 
 				background: url(../img/search.png) no-repeat scroll 5px 4px
 				border: none
+				cursor: pointer
 				&::-webkit-input-placeholder 
 					color: #474545
 					font-size: 20px
@@ -33,11 +35,18 @@
 					color: #474545
 					font-size: 20px
 					line-height: 20px
+				&:hover
+					text-decoration: none
+					border: 1px solid #ee042c
 		&__user
 			display: flex
 			align-items: center
 			&:hover
 				text-decoration: none
+			&:hover p
+				color: #ee042c
+			&:active p
+				opacity: 0.3
 			p
 				margin: 0
 				margin-right: 20px
@@ -63,6 +72,9 @@
 					color: $menu
 					&:hover
 						text-decoration: none
+						color: #ee042c
+					&:active
+						opacity: 0.3
 
 	&-mobile
 		display: none

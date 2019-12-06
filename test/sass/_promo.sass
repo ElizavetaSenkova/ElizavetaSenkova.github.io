@@ -31,6 +31,10 @@
 			background-color: $pink
 			&:hover
 				text-decoration: none
+				color: white
+				background-color: $violet
+			&:active
+				opacity: 0.3
 	&-text
 		h2	
 			margin: 0
@@ -68,6 +72,11 @@
 					color: #00104f
 					text-transform: uppercase
 					letter-spacing: 3px
+					&:hover
+						text-decoration: none
+						color: #ee042c
+					&:active
+						opacity: 0.3
 				a.active
 					font-weight: bold 
 					color: #ee042c
@@ -77,10 +86,15 @@
 			color: $pink
 			text-decoration: underline
 			letter-spacing: 5px
+			&:hover
+				color: $violet
+			&:active
+				opacity: 0.3
 	&-circle
 		background: url(../img/promo/circle.png) no-repeat 0 50px
 		background-position: center center
 		background-size: contain
+		animation-delay: 0.5s
 		&__number
 			margin: 0
 
