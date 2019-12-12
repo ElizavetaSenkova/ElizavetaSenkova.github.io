@@ -1,0 +1,56 @@
+.crystal
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 100vh
+	&.active
+		background-color: #58DCAF
+		.crystal__figure-block
+			background-color: #58DCAF
+	&.block
+		background-color: white
+		.crystal__figure-block
+			background-color: white
+	&__figure
+		width: 15%
+
+		transform: rotate(-45deg)
+
+		position: relative
+
+		overflow: hidden
+
+		background-color: pink
+		cursor: pointer			
+		&::before
+			content: ''
+
+			display: block
+			padding-top: 100%
+
+			background-color: pink
+		&-block
+			width: 119%
+			height: 47%
+
+			position: absolute
+			top: -12%
+			right: -43%
+
+			transform: rotate(45deg)
+
+			background-color: white
+			cursor: default
+		span
+			position: absolute
+			top: 67%
+			left: 39%
+
+			font-size: calcFluidFontSize(20, 275, 380, 2000)
+			font-weight: 700
+			letter-spacing: 20px
+			color: white
+
+			transform: translate(-50%, -50%) rotate(45deg)
+
