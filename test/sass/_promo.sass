@@ -1,0 +1,122 @@
+.promo
+	padding: 130px 70px 65px 70px
+
+	border-bottom: 1px solid $border
+	&-reg
+		h1
+			margin: 0
+			padding-top: 100px
+			padding-bottom: 65px
+
+			font-size: 170px
+			line-height: 170px
+			color: $violet
+			text-align: right
+			letter-spacing: 5px
+
+			background: url(../img/promo/01.png) no-repeat 100px 4px
+			background-position: right center
+			background-size: contain
+		a
+			display: block
+			width: 100%
+			padding: 22px 0 18px
+
+			font-size: 70px
+			line-height: 70px
+			text-transform: uppercase
+			color: white
+			text-align: center
+
+			background-color: $pink
+			&:hover
+				text-decoration: none
+				color: white
+				background-color: $violet
+			&:active
+				opacity: 0.3
+	&-text
+		h2	
+			margin: 0
+			margin-bottom: 20px
+
+			font-size: 48px
+			line-height: 48px
+			color: $violet
+			letter-spacing: 12px
+		p
+			max-width: 520px
+			margin: 0
+			margin-bottom: 25px
+
+			font-family: $text-font
+			font-size: 20px
+			line-height: 25px
+		&__list
+			display: flex
+			flex-wrap: wrap
+			margin: 0
+			margin-bottom: 20px
+			padding: 0
+
+			list-style: none
+			li
+				a
+					display: block
+					padding-right: 20px
+					padding-bottom: 5px
+
+					font-family: $promo-text-list-font
+					font-size: 24px
+					line-height: 28px
+					color: #00104f
+					text-transform: uppercase
+					letter-spacing: 3px
+					&:hover
+						text-decoration: none
+						color: #ee042c
+					&:active
+						opacity: 0.3
+				a.active
+					font-weight: bold 
+					color: #ee042c
+		&__more
+			font-size: 30px
+			line-height: 30px
+			color: $pink
+			text-decoration: underline
+			letter-spacing: 5px
+			&:hover
+				color: $violet
+			&:active
+				opacity: 0.3
+	&-circle
+		background: url(../img/promo/circle.png) no-repeat 0 50px
+		background-position: center center
+		background-size: contain
+		animation-delay: 0.5s
+		&__number
+			margin: 0
+
+			font-size: 100px
+			line-height: 100px
+			color: $violet
+			text-align: center
+		&__text
+			margin-left: 20px
+
+			font-size: 36px
+			line-height: 36px
+			text-transform: uppercase
+			letter-spacing: 10px
+			text-align: center
+		&__wrap
+			display: flex
+			align-items: center
+			align-content: center
+			vertical-align: middle
+			height: 100%
+			justify-content: center
+			flex-direction: column
+
+			

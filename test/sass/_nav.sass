@@ -1,0 +1,33 @@
+.nav
+	display: flex
+	padding-top: 10px
+	padding-bottom: 100px
+	padding-right: 70px
+	padding-left: 70px
+	ul
+		display: flex
+		align-items: center
+		margin: 0
+		margin-left: 20px
+		padding: 0
+
+		font-size: 24px
+		line-height: 24px
+		letter-spacing: 3px
+
+		list-style: none
+
+		border-right: 1px solid $border
+		&:last-child
+			border-right: none
+		li
+			margin-right: 20px
+			a
+				color: #333
+				&:hover
+					text-decoration: none
+					color: $pink
+				&:active
+					opacity: 0.3
+	&-title
+		color: $violet

@@ -1,0 +1,282 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+@media (max-width: 1640px) 
+	.header-top,
+	.header-menu
+		.container
+			max-width: 1200px
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.nav
+		flex-wrap: wrap
+		margin-bottom: 15px
+	.header-top,
+	.header-menu
+		.container
+			max-width: 992px
+	.header-top__logo
+		img
+			max-width: 300px
+
+	.promo
+		max-width: 992px
+		margin: 0 auto
+		padding: 0 15px
+
+		border-bottom: none
+		&-reg
+			margin-bottom: 15px
+			a
+				padding: 10px 0
+				font-size: 60px
+				line-height: 60px
+		&-text p
+			max-width: unset
+		&-text
+			margin-bottom: 35px
+		&-circle__wrap
+			height: 400px
+
+	.info
+		max-width: 992px
+		margin: 0 auto
+		padding: 0 15px
+		padding-top: 60px
+		margin-top: 60px
+
+		border-top: 1px solid #e6e6e6
+		&-general
+			margin-bottom: 45px
+
+			border-right: none
+		&-contacts
+			margin-bottom: 45px
+			padding: 0 15px
+
+			text-align: center
+
+			border-right: none
+		&-sub
+			margin-bottom: 60px
+			padding: 0 15px
+
+			text-align: center
+			&__form
+				justify-content: center
+
+	.nav
+		max-width: 992px
+		margin: 0 auto
+		padding: 0 15px
+		padding-top: 60px
+		padding-bottom: 40px
+		ul
+			margin-bottom: 15px
+
+	.course
+		max-width: 992px
+		margin: 0 auto
+		padding: 0 15px
+		&-line
+			border-right: none
+			border-left: none
+		.promo-text
+			padding: 0
+			padding-top: 55px
+			padding-bottom: 55px
+		&-list
+			padding: 0
+		&-img
+			margin-top: 60px
+			padding-bottom: 50px
+			justify-content: center
+		.promo-reg__second-line
+			border-right: none
+		.promo-reg__second
+			padding-right: 0
+			
+
+
+
+// ≥992px
++media-breakpoint-down(md)
+	.overlay
+		background: #000
+		height: 100%
+		opacity: 0.5
+		position: fixed
+		width: 100%
+		z-index: 100
+		top: 0
+		left: 0
+		display: none
+	.page-main
+		padding-top: 240px
+	.header-top,
+	.header-menu
+		display: none
+	.header-menu
+		display: none
+		width: 100%
+		padding-bottom: 20px
+
+		position: fixed
+		top: 254px
+		z-index: 100
+
+		background-color: #c1321a
+		&__list
+			flex-direction: column
+			li
+				a
+					display: block
+					margin: 10px 0
+
+					font-size: 28px
+					line-height: 28px
+					text-align: center
+					color: white
+
+	.header-mobile
+		display: block
+		width: 100%
+		padding-top: 40px		
+
+		position: fixed
+		z-index: 103
+
+		background-color: #c1321a
+		&__wrapper
+			display: flex
+			flex-direction: column
+		&__logo
+			padding-bottom: 35px
+
+			text-align: center
+
+			border-bottom: 1px solid white
+		&__info
+			display: flex
+			justify-content: space-between
+			align-items: center
+			padding-top: 32px
+			padding-bottom: 42px
+			.header-top__user p
+				color: white
+			.header-top__search
+				input
+					width: 165px
+					padding: 3px 0 3px 0
+
+					color: white
+
+					background: none
+					&::-webkit-input-placeholder 
+						color: white
+					&::-moz-placeholder 
+						color: white
+					&:-moz-placeholder 
+						color: white
+					&:-ms-input-placeholder  
+						color: white
+
+	.info,
+	.course,
+	.nav,
+	.promo
+		max-width: 768px
+
+	.promo-reg
+		margin-top: 40px
+
+// ≥768px
++media-breakpoint-down(sm)
+	.info,
+	.course,
+	.nav,
+	.promo
+		max-width: 576px
+
+	.promo-reg h1
+		font-size: 120px
+		line-height: 120px
+
+	.header-mobile__logo
+		img
+			max-width: 200px
+
+	.header-menu
+		top: 229px
+
+	.nav ul
+		flex-wrap: wrap
+		margin-bottom: 8px
+
+		line-height: 30px
+		letter-spacing: 1px
+
+		border-right: none
+	.promo-text h2
+		letter-spacing: unset
+	.info-general__list li
+		margin-bottom: 20px
+
+// ≥576px
++media-breakpoint-down(xs)
+	.info,
+	.course,
+	.nav,
+	.promo
+		max-width: 320px
+
+	.promo-reg h1
+		font-size: 90px
+		line-height: 90px
+
+	.header-mobile__info
+		display: unset
+		padding-bottom: 18px
+	.header-mobile__info .header-top__search input
+		width: 100%
+	.menu-toggle
+		display: inline-block
+	.header-top__user
+		display: inline-block
+		float: right
+		p
+			display: none
+	.header-mobile__wrapper .header-top__user img
+		display: block
+	.header-top__user p
+		margin-right: 0
+	.header-top__search input
+		text-align: center
+	.header-top__search
+		margin-bottom: 20px
+	.header-menu
+		top: 259px
+
+		border-top: 1px solid white
+	.header-menu__list
+		padding-top: 20px
+	.promo-reg
+		margin-top: 65px
+
+
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)
