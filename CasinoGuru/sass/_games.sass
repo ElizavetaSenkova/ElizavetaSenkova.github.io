@@ -1,0 +1,60 @@
+.games
+  padding: 70px 0
+  .button-transparent
+    margin-top: 70px
+  .slick-arrow
+    position: absolute
+    top: -30px
+    right: 10px
+
+    font-size: 20px
+    color: #dce3e8
+  .popular-arrow-left,
+  .online-arrow-left
+    right: 40px
+  .slick-dots
+    display: flex
+    justify-content: center
+    button
+      width: 8px
+      height: 8px
+      margin: 0 6px
+      padding: 0
+
+      font-size: 0
+
+      background: #a2aeb7
+      opacity: 0.25
+      border-radius: 50%
+      border: none
+  .slick-active button
+    opacity: 1
+  &__item p 
+    color: #a2aeb7
+  &__item-link
+    display: block
+
+    position: relative
+    &:hover .games__button
+      display: block !important
+    &:hover::before 
+      content: ''
+
+      width: 100%
+      height: 100%
+
+      position: absolute
+      top: 0
+
+      background: #1d2730
+      opacity: 0.75
+    &:focus
+      outline: none
+
+
+  &__button
+    display: none !important
+
+    position: absolute
+    top: 40%
+    left: 20%

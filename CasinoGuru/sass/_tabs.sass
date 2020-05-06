@@ -2,8 +2,19 @@
   &-inner
     background-color: #eceef2
   &-list__item
-    padding: 0 40px 0 0
     justify-content: space-between
+    align-items: center
+    margin: 10px 0
+    padding: 0 40px 0 0
+
+    background-color: white
+    &:hover
+      transform: scale(1.01)
+      box-shadow: 0 0 20px rgba(74,91,104,.3)
+      .tabs-list__visit
+        color: white
+
+        background-color: #359a3c
   &-list__title-wrapper
     display: flex
     align-items: center
@@ -50,6 +61,25 @@
     text-align: center
   &-list__visit
     display: block
+    padding: 10px 15px
+
+    font-style: 15px
+    line-height: 15px
+    font-weight: 700
+    color: white
+
+    background-color: $green
+    i
+      margin-right: 6px
+  &-list__read
+    display: block
+    padding-top: 10px
+
+    font-size: 12px
+    line-height: 12px
+    font-weight: 700
+    color: purple
+    text-align: center
 
   .nav
     display: flex
@@ -75,9 +105,17 @@
 
         font-size: 50px
   .tab-pane
+    display: none
     padding: 70px 0
+    &.show
+      display: block
     &__text
       padding-bottom: 60px
 
       color: $gray
+  .tab-content__link
+    display: block
+    width: 260px
+    margin: 0 auto
+    margin-top: 70px
 
