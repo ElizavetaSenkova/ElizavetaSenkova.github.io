@@ -1,0 +1,44 @@
+.actions {
+  padding: 40px 0;
+
+  background: #001630;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767.99px) {
+      flex-direction: column;
+    }
+
+  }
+
+  &__item {
+    padding: 15px;
+
+    h2 {
+      margin-bottom: 20px;
+
+      font-size: 25px;
+      line-height: 28px;
+      color: white;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0;
+
+      b {
+        color: #00FFE7;
+      }
+
+    }
+
+  }
+
+
+
+
+
+
+}

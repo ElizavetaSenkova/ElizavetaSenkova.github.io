@@ -1,0 +1,43 @@
+.casino {
+  padding: 50px 0;
+
+  &__title {
+    color: white;
+    font-weight: bold;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767.99px) {
+      flex-direction: column;
+    }
+
+  }
+
+  &__item {
+    padding: 15px;
+
+    h2 {
+      margin-bottom: 20px;
+
+      font-size: 25px;
+      line-height: 28px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0;
+    }
+
+  }
+
+
+
+
+
+
+
+}

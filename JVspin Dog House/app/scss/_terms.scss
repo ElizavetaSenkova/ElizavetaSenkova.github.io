@@ -1,0 +1,51 @@
+.terms {
+  padding: 50px 0;
+
+  background: $violet;
+
+  h2 {
+    margin-bottom: 20px;
+
+    font-size: 25px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: bold;
+  }
+
+  h3 {
+    margin-bottom: 20px;
+
+    font-size: 20px;
+    line-height: 22px;
+    color: white;
+    font-weight: bold;
+  }
+
+  ol {
+    margin-bottom: 20px;
+    padding: 0;
+    padding-left: 30px;
+
+    li {
+      padding: 5px 0;
+    }
+
+  }
+
+  &__link {
+    color: #39DBFF;
+
+    text-decoration: underline;
+
+    &:hover {
+      color: white;
+    }
+
+  }
+
+
+
+
+
+
+}
