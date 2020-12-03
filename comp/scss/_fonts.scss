@@ -1,0 +1,11 @@
+@import "_mixins/font-face";
+
+
+@include font-face("Gotham", "../fonts/Gotham/GothamPro");
+@include font-face("Gotham", "../fonts/Gotham/GothamPro-Medium", 500);
+@include font-face("Gotham", "../fonts/Gotham/GothamPro-Bold", 700);
+
+
+
+@include font-face("roboto-example", "../fonts/RobotoRegular/RobotoRegular");
+@include font-face("roboto-example", "../fonts/RobotoBold/RobotoBold", bold);
